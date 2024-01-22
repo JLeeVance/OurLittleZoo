@@ -6,7 +6,7 @@ function App() {
   const [ animals , setAnimals ] = useState([]);
 
   useEffect(() => {
-  fetch("http://localhost:3001/animals")
+  fetch("http://localhost:3000/animals")
   .then(r => r.json())
   .then(setAnimals)} , [] )
 

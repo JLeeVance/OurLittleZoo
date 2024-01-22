@@ -1,0 +1,152 @@
+{
+    "animals": [
+       {
+        "id": 1,
+        "commonName": "African Lion",
+        "scienceName": "Panthera Leo",
+        "animalUrl":	"./images/africanLion.jpg", 
+        "exhibit": "Africa",
+        "bio": "The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a hairy tuft at the end of its tail.",
+        "diet": "The lion typically hunts and consumes large animals that weigh 100-1000 pounds, such as zebra and wildebeest. When large prey is sparse, they have been known to hunt small rodents and reptiles.",
+        "carnivore": true,
+        "funFacts": ["The lion is a social species, forming family units called prides." , "The female’s in the pride often hunt alongside one another, working to take down giant prey."],
+        "likes": 1,
+        "comments": [ ]
+       },
+       {
+        "id": 2,
+        "commonName": "Springbok Antelope",
+        "scienceName": "Antidorcas Marsupialis",
+        "animalUrl": "./images/springbokAntelope.jpg",
+        "exhibit": "Africa",
+        "bio": "The Springbok is a slender, long-legged antelope. Both sexes have a pair of black, 35-to-50 cm (14-to-20 in) pair of long horns that curve backwards, along with the distinct characteristics of a white face with a dark stripe running from the eyes to its mouth. Further down the back you can observe the dark reddish/brown stripe leading from their lower hind legs all the way to their spine. If you found yourself standing behind a Springbok you may notice their distinct white rump flap.",
+        "diet": "The Springbok’s diet consists mainly of shrubbery and succulents.",
+        "carnivore": false,
+        "funFacts": [ "Did you know that the Springbok can go years without drinking water, surviving solely on the moisture obtained from the succulents it forages?" , "The Springbok has a characteristic ‘jump’ that is performed in succession. They launch themselves up to 6ft off the earth in a stiff legged posture, with the back bowed and white rump flap lifted."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 3,
+        "commonName": "Mainland Clouded Leopard",
+        "scienceName": "Neofelis nebulosa",
+        "animalUrl": "./images/cloudedLeopard.jpg",
+        "exhibit": "Asia",
+        "bio": "The clouded leopard has large dusky-gray blotches and irregular spots and stripes reminiscent of clouds. This jungle cat spends the day in the tree’s, lounging and waiting for the next chance to hunt.",
+        "diet": "The clouded leopard has adapted over time to feed upon many jungle dwelling vertebrates; some include the southern pig-tailed macaque, Asiatic brush-tailed porcupine, Bengel slow loris, and various pheasants.",
+        "carnivore": true,
+        "funFacts": ["The Clouded leopard uses its tail for balance as it traverses through the tree-tops." , "The Clouded leopard can climb vertically down a tree trunk, face first."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 4,
+        "commonName": "American Alligator",
+        "scienceName": "Alligator mississippiensis",
+        "animalUrl": "./images/americanAlligator.jpg",
+        "exhibit": "North America",
+        "bio": "The American alligator, oftentimes referred to as a ‘gator’, is a large crocodilian reptile that is native to the Southeastern United States and a small section of Northeastern Mexico. This reptile inhabits subtropical and tropical freshwater wetlands, such as marshes and swamps.",
+        "diet": "The American Alligator is an apex predator that consumes fish, amphibians, reptiles, birds, and mammals. There is not much that the Alligator wouldn’t eat.",
+        "carnivore": true,
+        "funFacts": ["The male American Alligator uses infrasound to attract female mates." , "The female American Alligator will create a nest made from mud, sticks, vegetation, and leaves to house the eggs in until they are ready to hatch." , "The female American Alligator will protect her young for up to one year after they are born."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 5,
+        "commonName": "Giraffe",
+        "scienceName": "Giraffa",
+        "animalUrl": "./images/giraffe.jpg",
+        "exhibit": "Africa",
+        "bio": "The Giraffe is an extremely large hoofed animal with a distinct brown spotted coat pattern. These social creatures are often seen in herds of related females with their offspring, or in bachelor-like groups where none of the adult males are related.",
+        "diet": "The Giraffe is an herbivore, consuming mostly leaves, fruits, and flowers of woody plants.",
+        "carnivore": false,
+        "funFacts": ["The Giraffe can grow up to 19ft tall, making it the tallest known living creature that exists on our planet." , "The Giraffe uses it’s long neck to reach for food high up in the trees."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 6,
+        "commonName": "Macaque",
+        "scienceName": "Macaca",
+        "animalUrl": "./images/macaque.jpg",
+        "exhibit": "Asia",
+        "bio": "The Macaques are a 23 species wide group of monkeys belonging to the genus Macaca. These small mammals are social creates, dividing themselves up into groups circling around a Matriarch. Most macaque species are listed as vulnerable to critically endangered with regards to conservation.",
+        "diet": "The macaques can typically be seen eating seeds, leaves, flowers, and tree bark. Some species will supplement their diet with small amounts of meat, including fish, insects, or small mammals.",
+        "carnivore": false,
+        "funFacts": ["Some Macaque species have become synanthropic, meaning they have learned to live alongside humans." , "The Macaque family has a variety of coat patterns to observe. The mothers are the leaders in their social groups."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 7,
+        "commonName": "Flamingos",
+        "scienceName": "Phoenicopteridae",
+        "animalUrl": "./images/flamingo.jpg",
+        "exhibit": "North America",
+        "bio": "The Flamingo is a wading bird displaying stunning pink feathers. There are a total of 6 different species of Flamingos, and they are all known to stand on one leg while tucking their other leg beneath their body. While searching for food, the Flamingo will stamp it’s webbed feet into the mud to stir up their food.",
+        "diet": "The Flamingo filter-feeds on brine shrimp and blue-green algae. They are also observed eating insect larvae, small insects, mollusks, and crustaceans.",
+        "carnivore": false,
+        "funFacts": ["The Flamingo are considered to be quite noisey, with their vocaliszations ranging from grunts and growling to nasal honking." , "The Flamingo is an extremely social bird, living in colonies with numbers into the thousands."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 8,
+        "commonName": "North American River Otter",
+        "scienceName": "Lontra Canadensis",
+        "animalUrl": "./images/otter.jpg",
+        "exhibit": "North America",
+        "bio": "The North American River Otter is a semiaquatic mammal that lives only in the North American continent. This noodle like mammal is covered in a thick, water-repelling fur coat, spending it’s time basking in the sun and hunting for creatures. The curiosity of the otter can lead to some entertaining ‘watching’.",
+        "diet": "This predator will take just about anything it can get its paws on. Fish, Mussels, Clams, Snails, Turtles, and other small creatures are among the list of commonly eaten foods.",
+        "carnivore": true,
+        "funFacts": ["Did you know that the giant river otter is generally larger in length than most American women?" , "The giant river otter is also generally 2 inches taller than the ‘average’ American man." , "The otter is a member of the ferret family genus, so they could be called a water noodle."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 9,
+        "commonName": "Bald Eagle",
+        "scienceName": "Haliaeetus Leucocephalus",
+        "animalUrl": "./images/baldEagle.jpg",
+        "exhibit": "North America",
+        "bio": "This beautiful bird is currently being rehabbed in our facility. We have set up a temporary display in order to allow our guests to encounter one up close, but we do ask that you keep your voices low. Frankie is a little shy still, and we want him to like us! The American Bald Eagle is a predator bird, occupying areas with large bodies of water, ample food source, and tall trees to nest in. Most often found in colder climates.",
+        "diet": "The Bald Eagle is not afraid to work for it’s food, waiting for the perfect moment to dive into the water and grab whatever unlucky fish decided to swim near the surface.",
+        "carnivore": true,
+        "funFacts": ["The Bald Eagle is a sign of patriotism for America, standing as the National Bird." , "The Bald Eagle was facing extinction, but through the efforts of Conservation teams, just like the one in-house getting Frankie on the mend, it has been removed from the list of endangered species."],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 10,
+        "commonName": "Orangutans",
+        "scienceName": "Pongo Pygmaeus",
+        "animalUrl": "./images/orangutan",
+        "exhibit": "Asia",
+        "bio": "These loveable, human-like creatures have been capturing the hearts of our guest for quite some time. They diverged genetically from the hominid family, which also contains gorillas, chimps, and humans; it is no wonder they are so curious! The Orangutan has a body convered in red/brownish hair, but a face that is nearly hairless",
+        "diet": "Orangutans eat from a variety of plant and animal food sources. The majority of their diet consists of fruits, leaves, roots, stalks, and seeds.",
+        "carnivore": false,
+        "funFacts": ["The Orangutan’s we have on exhibit love to show their babies off to other babies!"],
+        "likes": 1,
+        "comments":[]
+       },
+       {
+        "id": 11,
+        "commonName": "American Bison",
+        "scienceName": "Bison bison",
+        "animalUrl": "./images/bison.jpg",
+        "exhibit": "North America",
+        "bio": "The North American Bison is a beautiful bovine with a brown coat, ranging in different shades of brown. This social animal travels in herds, grazing as they migrate. Nearly hunted to extinction during the 19th and 20th century, this hardy bovine has since rebounded.",
+        "diet": "The North American spends it's days foraging for food through plants, grass, and other shrubbery.",
+        "carnivore": false,
+        "funFacts": ["The North American, and European Bison is the longest surviving terrestrial animal in North America and Europe." , "There are some skeletal differences in the European and North American Bison. The European bison has 14 ribs, which the latter has 15." ],
+        "likes": 1,
+        "comments":[]
+       }
+    ],
+    "events": [
+
+    ]
+
+
+}

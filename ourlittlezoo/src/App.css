@@ -1,5 +1,34 @@
+
+.animalCard{
+  display:block;
+  border: #282c34;
+  border-style: double;
+  width: 500px;
+
+
+}
+
+.cardImg{
+  max-block-size: 275px;
+}
+
+.animalNav{
+  display: block;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
 .App {
   text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: grid
+
 }
 
 .App-logo {
@@ -24,15 +53,3 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

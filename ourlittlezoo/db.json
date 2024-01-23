@@ -1,296 +1,372 @@
 {
-    "animals": [
-       {
-        "id": 1,
-        "commonName": "African Lion",
-        "scienceName": "Panthera Leo",
-        "animalUrl":	"./images/africanLion.jpg", 
-        "exhibit": "Africa",
-        "bio": "The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a hairy tuft at the end of its tail.",
-        "diet": "The lion typically hunts and consumes large animals that weigh 100-1000 pounds, such as zebra and wildebeest. When large prey is sparse, they have been known to hunt small rodents and reptiles.",
-        "carnivore": true,
-        "funFacts": ["The lion is a social species, forming family units called prides." , "The female’s in the pride often hunt alongside one another, working to take down giant prey."],
-        "likes": 1,
-        "comments": [ ]
-       },
-       {
-        "id": 2,
-        "commonName": "Springbok Antelope",
-        "scienceName": "Antidorcas Marsupialis",
-        "animalUrl": "./images/springbokAntelope.jpg",
-        "exhibit": "Africa",
-        "bio": "The Springbok is a slender, long-legged antelope. Both sexes have a pair of black, 35-to-50 cm (14-to-20 in) pair of long horns that curve backwards, along with the distinct characteristics of a white face with a dark stripe running from the eyes to its mouth. Further down the back you can observe the dark reddish/brown stripe leading from their lower hind legs all the way to their spine. If you found yourself standing behind a Springbok you may notice their distinct white rump flap.",
-        "diet": "The Springbok’s diet consists mainly of shrubbery and succulents.",
-        "carnivore": false,
-        "funFacts": [ "Did you know that the Springbok can go years without drinking water, surviving solely on the moisture obtained from the succulents it forages?" , "The Springbok has a characteristic ‘jump’ that is performed in succession. They launch themselves up to 6ft off the earth in a stiff legged posture, with the back bowed and white rump flap lifted."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 3,
-        "commonName": "Mainland Clouded Leopard",
-        "scienceName": "Neofelis nebulosa",
-        "animalUrl": "./images/cloudedLeopard.jpg",
-        "exhibit": "Asia",
-        "bio": "The clouded leopard has large dusky-gray blotches and irregular spots and stripes reminiscent of clouds. This jungle cat spends the day in the tree’s, lounging and waiting for the next chance to hunt.",
-        "diet": "The clouded leopard has adapted over time to feed upon many jungle dwelling vertebrates; some include the southern pig-tailed macaque, Asiatic brush-tailed porcupine, Bengel slow loris, and various pheasants.",
-        "carnivore": true,
-        "funFacts": ["The Clouded leopard uses its tail for balance as it traverses through the tree-tops." , "The Clouded leopard can climb vertically down a tree trunk, face first."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 4,
-        "commonName": "American Alligator",
-        "scienceName": "Alligator mississippiensis",
-        "animalUrl": "./images/americanAlligator.jpg",
-        "exhibit": "North America",
-        "bio": "The American alligator, oftentimes referred to as a ‘gator’, is a large crocodilian reptile that is native to the Southeastern United States and a small section of Northeastern Mexico. This reptile inhabits subtropical and tropical freshwater wetlands, such as marshes and swamps.",
-        "diet": "The American Alligator is an apex predator that consumes fish, amphibians, reptiles, birds, and mammals. There is not much that the Alligator wouldn’t eat.",
-        "carnivore": true,
-        "funFacts": ["The male American Alligator uses infrasound to attract female mates." , "The female American Alligator will create a nest made from mud, sticks, vegetation, and leaves to house the eggs in until they are ready to hatch." , "The female American Alligator will protect her young for up to one year after they are born."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 5,
-        "commonName": "Giraffe",
-        "scienceName": "Giraffa",
-        "animalUrl": "./images/giraffe.jpg",
-        "exhibit": "Africa",
-        "bio": "The Giraffe is an extremely large hoofed animal with a distinct brown spotted coat pattern. These social creatures are often seen in herds of related females with their offspring, or in bachelor-like groups where none of the adult males are related.",
-        "diet": "The Giraffe is an herbivore, consuming mostly leaves, fruits, and flowers of woody plants.",
-        "carnivore": false,
-        "funFacts": ["The Giraffe can grow up to 19ft tall, making it the tallest known living creature that exists on our planet." , "The Giraffe uses it’s long neck to reach for food high up in the trees."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 6,
-        "commonName": "Macaque",
-        "scienceName": "Macaca",
-        "animalUrl": "./images/macaque.jpg",
-        "exhibit": "Asia",
-        "bio": "The Macaques are a 23 species wide group of monkeys belonging to the genus Macaca. These small mammals are social creates, dividing themselves up into groups circling around a Matriarch. Most macaque species are listed as vulnerable to critically endangered with regards to conservation.",
-        "diet": "The macaques can typically be seen eating seeds, leaves, flowers, and tree bark. Some species will supplement their diet with small amounts of meat, including fish, insects, or small mammals.",
-        "carnivore": false,
-        "funFacts": ["Some Macaque species have become synanthropic, meaning they have learned to live alongside humans." , "The Macaque family has a variety of coat patterns to observe. The mothers are the leaders in their social groups."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 7,
-        "commonName": "Flamingos",
-        "scienceName": "Phoenicopteridae",
-        "animalUrl": "./images/flamingo.jpg",
-        "exhibit": "North America",
-        "bio": "The Flamingo is a wading bird displaying stunning pink feathers. There are a total of 6 different species of Flamingos, and they are all known to stand on one leg while tucking their other leg beneath their body. While searching for food, the Flamingo will stamp it’s webbed feet into the mud to stir up their food.",
-        "diet": "The Flamingo filter-feeds on brine shrimp and blue-green algae. They are also observed eating insect larvae, small insects, mollusks, and crustaceans.",
-        "carnivore": false,
-        "funFacts": ["The Flamingo are considered to be quite noisey, with their vocaliszations ranging from grunts and growling to nasal honking." , "The Flamingo is an extremely social bird, living in colonies with numbers into the thousands."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 8,
-        "commonName": "North American River Otter",
-        "scienceName": "Lontra Canadensis",
-        "animalUrl": "./images/otter.jpg",
-        "exhibit": "North America",
-        "bio": "The North American River Otter is a semiaquatic mammal that lives only in the North American continent. This noodle like mammal is covered in a thick, water-repelling fur coat, spending it’s time basking in the sun and hunting for creatures. The curiosity of the otter can lead to some entertaining ‘watching’.",
-        "diet": "This predator will take just about anything it can get its paws on. Fish, Mussels, Clams, Snails, Turtles, and other small creatures are among the list of commonly eaten foods.",
-        "carnivore": true,
-        "funFacts": ["Did you know that the giant river otter is generally larger in length than most American women?" , "The giant river otter is also generally 2 inches taller than the ‘average’ American man." , "The otter is a member of the ferret family genus, so they could be called a water noodle."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 9,
-        "commonName": "Bald Eagle",
-        "scienceName": "Haliaeetus Leucocephalus",
-        "animalUrl": "./images/baldEagle.jpg",
-        "exhibit": "North America",
-        "bio": "This beautiful bird is currently being rehabbed in our facility. We have set up a temporary display in order to allow our guests to encounter one up close, but we do ask that you keep your voices low. Frankie is a little shy still, and we want him to like us! The American Bald Eagle is a predator bird, occupying areas with large bodies of water, ample food source, and tall trees to nest in. Most often found in colder climates.",
-        "diet": "The Bald Eagle is not afraid to work for it’s food, waiting for the perfect moment to dive into the water and grab whatever unlucky fish decided to swim near the surface.",
-        "carnivore": true,
-        "funFacts": ["The Bald Eagle is a sign of patriotism for America, standing as the National Bird." , "The Bald Eagle was facing extinction, but through the efforts of Conservation teams, just like the one in-house getting Frankie on the mend, it has been removed from the list of endangered species."],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 10,
-        "commonName": "Orangutans",
-        "scienceName": "Pongo Pygmaeus",
-        "animalUrl": "./images/orangutan",
-        "exhibit": "Asia",
-        "bio": "These loveable, human-like creatures have been capturing the hearts of our guest for quite some time. They diverged genetically from the hominid family, which also contains gorillas, chimps, and humans; it is no wonder they are so curious! The Orangutan has a body convered in red/brownish hair, but a face that is nearly hairless",
-        "diet": "Orangutans eat from a variety of plant and animal food sources. The majority of their diet consists of fruits, leaves, roots, stalks, and seeds.",
-        "carnivore": false,
-        "funFacts": ["The Orangutan’s we have on exhibit love to show their babies off to other babies!"],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 11,
-        "commonName": "American Bison",
-        "scienceName": "Bison bison",
-        "animalUrl": "./images/bison.jpg",
-        "exhibit": "North America",
-        "bio": "The North American Bison is a beautiful bovine with a brown coat, ranging in different shades of brown. This social animal travels in herds, grazing as they migrate. Nearly hunted to extinction during the 19th and 20th century, this hardy bovine has since rebounded.",
-        "diet": "The North American spends it's days foraging for food through plants, grass, and other shrubbery.",
-        "carnivore": false,
-        "funFacts": ["The North American, and European Bison is the longest surviving terrestrial animal in North America and Europe." , "There are some skeletal differences in the European and North American Bison. The European bison has 14 ribs, which the latter has 15." ],
-        "likes": 1,
-        "comments":[]
-       },
-       {
-        "id": 12,
-        "commonName":  "Bengal Tiger",
-        "scienceName": "Panthera Tigris Tigris",
-        "animalUrl": "./images/tiger.jpg",
-        "exhibit": "Asia",
-        "bio": "Among the largest species of cats in the world, tigers are powerful hunters with sharp teeth, strong jaws and agile bodies. They range across Asia from Russia all the way to Sumatra and mainland Southeast Asia. Scientists still have much to learn about these beautiful, endangered cats.",
-        "diet":  "Tigers are ambush predators that rely on stealth and strength to take down prey. These apex predators primarily hunt large ungulates, such as wild boar and deer, but are also known to consume monkeys, buffalo, sloth bears, leopards and even crocodiles. When tigers are found in close proximity to humans, they may also feed on domestic animals, such as cattle or goats. Tigers are adept swimmers and have even been recorded hunting in the water.",
-        "carnivore": true,
-        "funFacts": ["Like a human fingerprint, no two tigers have the same pattern of stripes on their coats. Scientists can use these distinctions to identify tigers in the wild."],
-        "likes": 1,
-        "comments": [ "Every time I see these majestic Bengal Tigers, I'm struck by their powerful presence and striking stripes. They're truly the kings of the jungle!" ]
-        },
-        {
-        "id": 13,
-        "commonName":  "Ostrich",
-        "scienceName": "Struthio camelus",
-        "animalUrl": "./images/ostrich.jpg",
-        "exhibit": "Africa",
-        "bio": "The world’s tallest and heaviest bird, the common ostrich is native to the grasslands and savannas of Africa. These birds are completely flightless but are incredibly swift runners due to their long, strong legs—in fact, they are the fastest two-legged animals on Earth.",
-        "diet":  "Ostriches are omnivores, although most of their diet is plant-based. They mainly eat leafy greens, flowering plants, roots, grasses and succulents. They also occasionally feed on fallen fruit or small animals such as mice, lizards, frogs, grasshoppers and locusts.",
-        "carnivore": true,
-        "funFacts": ["The fastest bird on land, ostriches can sprint up to 43 miles (70 kilometers) per hour."],
-        "likes": 1,
-        "comments": [ "I never knew ostriches could run that fast." ]
-        },
-        {
-        "id": 14,
-        "commonName":  "Zebra",
-        "scienceName": "Equus zebra",
-        "animalUrl": "./images/zebra.jpg",
-        "exhibit": "Africa",
-        "bio": "The mountain zebra (Equus zebra) prefers mountainous, woodland, or grassland habitats. There are two sub-species of mountain zebra–the Cape mountain zebra (South Africa) and Hartmann’s mountain zebra (southwestern Angola and Namibia).",
-        "diet":  "Mountain zebras are herbivores. In the wild, they graze and browse for grasses, shrubs and leaves to eat. ",
-        "carnivore": false,
-        "funFacts": ["While some may think the stripes are a camouflage against predators, they actually repel flies! Zebras have black skin, so the stripes that overlay their skin are white."],
-        "likes": 1,
-        "comments": [ "I could spend hours watching these zebras." ]
-        },
-        {
-        "id": 15,
-        "commonName":  "White Rhino",
-        "scienceName": "Ceratotherium simum",
-        "animalUrl": "./images/whiteRhino.jpg",
-        "exhibit": "Africa",
-        "bio": "White rhinos are the second-largest land mammal and their name comes from the Afrikaan’s, a West Germanic language word, Weit, which means wide and refers to the animal’s mouth.",
-        "diet":  "Rhinos are herbivores who rely on a variety of plants for nourishment. In their natural habitat, these gigantic herbivores graze mostly on grass and the fruit and leaves of shrubs and trees. As grazers, as they eat continuously, rather than at specific times.",
-        "carnivore": false,
-        "funFacts": ["Rhinos can often be seen rolling around in mud, giving themselves a protective 'mud coat’ to keep them cool, stop insects biting and get rid of any parasites."],
-        "likes": 1,
-        "comments": [ "I'm surprised by how massive rhinos are up close!" ]
-        },
-        {
-        "id": 16,
-        "commonName":  "Asian Elephant",
-        "scienceName": "Elephas maximus",
-        "animalUrl": "./images/asianElephant.jpg",
-        "exhibit": "Asia",
-        "bio": "The largest living land mammals, elephants are intelligent, social and vital to their ecosystems.",
-        "diet":  "Asian Elephants feed primarily on grasses but also consume large amounts of browse, including leaves, roots, vines, twigs, shoots and bark, as well as fruit. Cultivated crops such as bananas and sugar cane are also a favored food, placing them in conflict with farmers.",
-        "carnivore": false,
-        "funFacts": ["Elephants communicate over long distances using low-pitched sounds that are barely audible to humans. These powerful infrasonic rumbles contain specific messages that can be heard and understood by other elephants more than 2 miles away."],
-        "likes": 1,
-        "comments": [ "It's fascinating how elephants use their trunks like a hand to grab things!" ]
-        },
-        {
-        "id": 17,
-        "commonName":  "Addax",
-        "scienceName": "Addax nasomaculatus",
-        "animalUrl": "./images/addax.jpg",
-        "exhibit": "Africa",
-        "bio": "Specialized to live in deserts, the addax is a shy, cautious antelope notable for its long, twisted horns. This species was once abundant throughout Northern Africa, and now inhabits just a tiny fraction of its former range. ",
-        "diet":  "Like other antelopes, addax are herbivores. They survive by eating desert grasses, shrubs and succulents, receiving most, if not all, of the water they require from the plants they feed on. They can also collect morning dew from leaves. Their bodies are so efficient at conserving water that they excrete dry feces and concentrated urine.",
-        "carnivore": false,
-        "funFacts": ["Their pale coats help reflect the sun’s rays, which keeps them cool in extreme heat. "],
-        "likes": 1,
-        "comments": [ "The spiral horns on the addax are really striking and unique!" ]
-        },
-        {
-        "id": 18,
-        "commonName":  "California Sea Lion",
-        "scienceName": "Zalophus californianus",
-        "animalUrl": "./images/seaLion.jpg",
-        "exhibit": "North America",
-        "bio": "Sea lions are large, gregarious mammals found along the western coast of North America. In the water, their torpedo-shaped bodies can reach speeds of 25 to 30 mph!",
-        "diet":  "They are generalist feeders, eating herring, rockfish, anchovies and other fish, krill, and invertebrates, such as squid and octopus. They typically feed toward the top of the water column but can dive as deep as 1,000 feet if necessary.",
-        "carnivore": true,
-        "funFacts": ["Unlike seals, sea lions primarily use their fore-flippers to propel themselves through the water. They also have visible ear-flaps, while seals only have ear holes."],
-        "likes": 1,
-        "comments": [ "It's adorable how sea lions can be so playful and agile in the water!" ]
-        },
-        {
-        "id": 19,
-        "commonName":  "Beaver",
-        "scienceName": "Castor canadensis",
-        "animalUrl": "./images/beaver.jpg",
-        "exhibit": "North America",
-        "bio": "Beavers are the largest rodents in North America and one of the few species that significantly change their environment. By building dams, which form slow-moving ponds and reduce erosion, they provide habitat and resources for dozens of other species.",
-        "diet":  "Beavers are herbivores, eating leaves, woody stems and aquatic plants. Their chief building materials are also their preferred foods: poplar, aspen, willow, birch and maple.",
-        "carnivore": false,
-        "funFacts": ["A beaver's teeth, which are orange due to their protective coating, grow continuously throughout its lifetime."],
-        "likes": 1,
-        "comments": [ "I'm impressed by how skillfully beavers can build their dams, even in a zoo!" ]
-        },
-        {
-        "id": 20,
-        "commonName":  "Red Wolf",
-        "scienceName": "Canis rufus",
-        "animalUrl": "./images/redWolf.jpg",
-        "exhibit": "North America",
-        "bio": "The red wolf is a critically endangered canine native to the southeastern United States. Highly intelligent and sociable animals, red wolves were once abundant throughout their native range, but habitat loss and persecution by humans drove this species to the brink of extinction in the 20th century.",
-        "diet":  "Red wolves are carnivores, eating up to five pounds of meat a day. Common prey animals include white-tailed deer, raccoons, turkeys, opossums, nutria, and smaller animals like rabbits, birds and mice. They will also eat carrion and have been known to eat insects, berries and some plant materials.",
-        "carnivore": true,
-        "funFacts": ["Despite their fearsome reputation, red wolves are normally quite shy around people. They pose little to no threat around humans."],
-        "likes": 1,
-        "comments": [ "The red wolves are so elusive and majestic. It's a rare treat to see them up close!" ]
-        },
-        {
-        "id": 21,
-        "commonName":  "Giant Panda",
-        "scienceName": "Ailuropoda melanoleuca",
-        "animalUrl": "./images/giantPanda.jpg",
-        "exhibit": "Asia",
-        "bio": "High in dense bamboo forests in the misty, rainy mountains of southwestern China lives one of the world's rarest mammals: the giant panda, also called the panda. Only about 1,500 of these black-and-white bears survive in the wild.",
-        "diet":  "Pandas eat almost nothing but bamboo shoots and leaves. Occasionally they eat other vegetation, fish, or small mammals, but bamboo accounts for 99 percent of their diets.",
-        "carnivore": false,
-        "funFacts": ["Pandas eat fast, they eat a lot, and they spend about 12 hours a day doing it. The reason: They digest only about a fifth of what they eat."],
-        "likes": 1,
-        "comments": [ "Pandas look so cuddly and peaceful when they're munching on bamboo!" ]
-        },
-        {
-        "id": 22,
-        "commonName":  "Red Panda",
-        "scienceName": "Ailurus fulgens",
-        "animalUrl": "./images/redPanda.jpg",
-        "exhibit": "Asia",
-        "bio": "Red pandas, like giant pandas, are bamboo eaters native to Asia’s high forests. Despite these similarities and their shared name, the two species are not closely related. Red pandas are much smaller than giant pandas and are the only living member of their taxonomic family.",
-        "diet":  "Bamboo constitutes about 95% of the red panda's diet. Unlike giant pandas that feed on nearly every above-ground portion of bamboo (including the culm, or woody stem), red pandas feed selectively on the most nutritious leaf tips and, when available, tender shoots.",
-        "carnivore": false,
-        "funFacts": ["Red pandas share the giant panda's pseudo-thumb, a modified wrist bone used to grasp bamboo when feeding."],
-        "likes": 1,
-        "comments": [ "Red pandas are so cute and fluffy, especially when they're climbing around in the trees!" ]
-        }
-        
-    ],
-    "events": [
-
-    ]
-
-
+  "animals": [
+    {
+      "id": "1",
+      "commonName": "African Lion",
+      "scienceName": "Panthera Leo",
+      "animalUrl": "../images/africanLion.jpg",
+      "exhibit": "Africa",
+      "bio": "The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a hairy tuft at the end of its tail.",
+      "diet": "The lion typically hunts and consumes large animals that weigh 100-1000 pounds, such as zebra and wildebeest. When large prey is sparse, they have been known to hunt small rodents and reptiles.",
+      "carnivore": true,
+      "funFacts": [
+        "The lion is a social species, forming family units called prides.",
+        "The female’s in the pride often hunt alongside one another, working to take down giant prey."
+      ],
+      "likes": 1,
+      "comments": [
+        "The Lion is one of my favorite Animals! "
+      ]
+    },
+    {
+      "id": "2",
+      "commonName": "Springbok Antelope",
+      "scienceName": "Antidorcas Marsupialis",
+      "animalUrl": "../images/springbokAntelope.jpg",
+      "exhibit": "Africa",
+      "bio": "The Springbok is a slender, long-legged antelope. Both sexes have a pair of black, 35-to-50 cm (14-to-20 in) pair of long horns that curve backwards, along with the distinct characteristics of a white face with a dark stripe running from the eyes to its mouth. Further down the back you can observe the dark reddish/brown stripe leading from their lower hind legs all the way to their spine. If you found yourself standing behind a Springbok you may notice their distinct white rump flap.",
+      "diet": "The Springbok’s diet consists mainly of shrubbery and succulents.",
+      "carnivore": false,
+      "funFacts": [
+        "Did you know that the Springbok can go years without drinking water, surviving solely on the moisture obtained from the succulents it forages?",
+        "The Springbok has a characteristic ‘jump’ that is performed in succession. They launch themselves up to 6ft off the earth in a stiff legged posture, with the back bowed and white rump flap lifted."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "3",
+      "commonName": "Mainland Clouded Leopard",
+      "scienceName": "Neofelis nebulosa",
+      "animalUrl": "../images/cloudedLeopard.jpg",
+      "exhibit": "Asia",
+      "bio": "The clouded leopard has large dusky-gray blotches and irregular spots and stripes reminiscent of clouds. This jungle cat spends the day in the tree’s, lounging and waiting for the next chance to hunt.",
+      "diet": "The clouded leopard has adapted over time to feed upon many jungle dwelling vertebrates; some include the southern pig-tailed macaque, Asiatic brush-tailed porcupine, Bengel slow loris, and various pheasants.",
+      "carnivore": true,
+      "funFacts": [
+        "The Clouded leopard uses its tail for balance as it traverses through the tree-tops.",
+        "The Clouded leopard can climb vertically down a tree trunk, face first."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "4",
+      "commonName": "American Alligator",
+      "scienceName": "Alligator mississippiensis",
+      "animalUrl": "../images/americanAlligator.jpg",
+      "exhibit": "North America",
+      "bio": "The American alligator, oftentimes referred to as a ‘gator’, is a large crocodilian reptile that is native to the Southeastern United States and a small section of Northeastern Mexico. This reptile inhabits subtropical and tropical freshwater wetlands, such as marshes and swamps.",
+      "diet": "The American Alligator is an apex predator that consumes fish, amphibians, reptiles, birds, and mammals. There is not much that the Alligator wouldn’t eat.",
+      "carnivore": true,
+      "funFacts": [
+        "The male American Alligator uses infrasound to attract female mates.",
+        "The female American Alligator will create a nest made from mud, sticks, vegetation, and leaves to house the eggs in until they are ready to hatch.",
+        "The female American Alligator will protect her young for up to one year after they are born."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "5",
+      "commonName": "Giraffe",
+      "scienceName": "Giraffa",
+      "animalUrl": "../images/giraffe.jpg",
+      "exhibit": "Africa",
+      "bio": "The Giraffe is an extremely large hoofed animal with a distinct brown spotted coat pattern. These social creatures are often seen in herds of related females with their offspring, or in bachelor-like groups where none of the adult males are related.",
+      "diet": "The Giraffe is an herbivore, consuming mostly leaves, fruits, and flowers of woody plants.",
+      "carnivore": false,
+      "funFacts": [
+        "The Giraffe can grow up to 19ft tall, making it the tallest known living creature that exists on our planet.",
+        "The Giraffe uses it’s long neck to reach for food high up in the trees."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "6",
+      "commonName": "Macaque",
+      "scienceName": "Macaca",
+      "animalUrl": "../images/macaque.jpg",
+      "exhibit": "Asia",
+      "bio": "The Macaques are a 23 species wide group of monkeys belonging to the genus Macaca. These small mammals are social creates, dividing themselves up into groups circling around a Matriarch. Most macaque species are listed as vulnerable to critically endangered with regards to conservation.",
+      "diet": "The macaques can typically be seen eating seeds, leaves, flowers, and tree bark. Some species will supplement their diet with small amounts of meat, including fish, insects, or small mammals.",
+      "carnivore": false,
+      "funFacts": [
+        "Some Macaque species have become synanthropic, meaning they have learned to live alongside humans.",
+        "The Macaque family has a variety of coat patterns to observe. The mothers are the leaders in their social groups."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "7",
+      "commonName": "Flamingos",
+      "scienceName": "Phoenicopteridae",
+      "animalUrl": "../images/flamingo.jpg",
+      "exhibit": "North America",
+      "bio": "The Flamingo is a wading bird displaying stunning pink feathers. There are a total of 6 different species of Flamingos, and they are all known to stand on one leg while tucking their other leg beneath their body. While searching for food, the Flamingo will stamp it’s webbed feet into the mud to stir up their food.",
+      "diet": "The Flamingo filter-feeds on brine shrimp and blue-green algae. They are also observed eating insect larvae, small insects, mollusks, and crustaceans.",
+      "carnivore": false,
+      "funFacts": [
+        "The Flamingo are considered to be quite noisey, with their vocaliszations ranging from grunts and growling to nasal honking.",
+        "The Flamingo is an extremely social bird, living in colonies with numbers into the thousands."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "8",
+      "commonName": "North American River Otter",
+      "scienceName": "Lontra Canadensis",
+      "animalUrl": "../images/otter.jpg",
+      "exhibit": "North America",
+      "bio": "The North American River Otter is a semiaquatic mammal that lives only in the North American continent. This noodle like mammal is covered in a thick, water-repelling fur coat, spending it’s time basking in the sun and hunting for creatures. The curiosity of the otter can lead to some entertaining ‘watching’.",
+      "diet": "This predator will take just about anything it can get its paws on. Fish, Mussels, Clams, Snails, Turtles, and other small creatures are among the list of commonly eaten foods.",
+      "carnivore": true,
+      "funFacts": [
+        "Did you know that the giant river otter is generally larger in length than most American women?",
+        "The giant river otter is also generally 2 inches taller than the ‘average’ American man.",
+        "The otter is a member of the ferret family genus, so they could be called a water noodle."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "9",
+      "commonName": "Bald Eagle",
+      "scienceName": "Haliaeetus Leucocephalus",
+      "animalUrl": "../images/baldEagle.jpg",
+      "exhibit": "North America",
+      "bio": "This beautiful bird is currently being rehabbed in our facility. We have set up a temporary display in order to allow our guests to encounter one up close, but we do ask that you keep your voices low. Frankie is a little shy still, and we want him to like us! The American Bald Eagle is a predator bird, occupying areas with large bodies of water, ample food source, and tall trees to nest in. Most often found in colder climates.",
+      "diet": "The Bald Eagle is not afraid to work for it’s food, waiting for the perfect moment to dive into the water and grab whatever unlucky fish decided to swim near the surface.",
+      "carnivore": true,
+      "funFacts": [
+        "The Bald Eagle is a sign of patriotism for America, standing as the National Bird.",
+        "The Bald Eagle was facing extinction, but through the efforts of Conservation teams, just like the one in-house getting Frankie on the mend, it has been removed from the list of endangered species."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "10",
+      "commonName": "Orangutans",
+      "scienceName": "Pongo Pygmaeus",
+      "animalUrl": "../images/orangutan.jpg",
+      "exhibit": "Asia",
+      "bio": "These loveable, human-like creatures have been capturing the hearts of our guest for quite some time. They diverged genetically from the hominid family, which also contains gorillas, chimps, and humans; it is no wonder they are so curious! The Orangutan has a body convered in red/brownish hair, but a face that is nearly hairless",
+      "diet": "Orangutans eat from a variety of plant and animal food sources. The majority of their diet consists of fruits, leaves, roots, stalks, and seeds.",
+      "carnivore": false,
+      "funFacts": [
+        "The Orangutan’s we have on exhibit love to show their babies off to other babies!"
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "11",
+      "commonName": "American Bison",
+      "scienceName": "Bison bison",
+      "animalUrl": "../images/bison.jpg",
+      "exhibit": "North America",
+      "bio": "The North American Bison is a beautiful bovine with a brown coat, ranging in different shades of brown. This social animal travels in herds, grazing as they migrate. Nearly hunted to extinction during the 19th and 20th century, this hardy bovine has since rebounded.",
+      "diet": "The North American spends it's days foraging for food through plants, grass, and other shrubbery.",
+      "carnivore": false,
+      "funFacts": [
+        "The North American, and European Bison is the longest surviving terrestrial animal in North America and Europe.",
+        "There are some skeletal differences in the European and North American Bison. The European bison has 14 ribs, which the latter has 15."
+      ],
+      "likes": 1,
+      "comments": []
+    },
+    {
+      "id": "12",
+      "commonName": "Bengal Tiger",
+      "scienceName": "Panthera Tigris Tigris",
+      "animalUrl": "../images/tiger.jpg",
+      "exhibit": "Asia",
+      "bio": "Among the largest species of cats in the world, tigers are powerful hunters with sharp teeth, strong jaws and agile bodies. They range across Asia from Russia all the way to Sumatra and mainland Southeast Asia. Scientists still have much to learn about these beautiful, endangered cats.",
+      "diet": "Tigers are ambush predators that rely on stealth and strength to take down prey. These apex predators primarily hunt large ungulates, such as wild boar and deer, but are also known to consume monkeys, buffalo, sloth bears, leopards and even crocodiles. When tigers are found in close proximity to humans, they may also feed on domestic animals, such as cattle or goats. Tigers are adept swimmers and have even been recorded hunting in the water.",
+      "carnivore": true,
+      "funFacts": [
+        "Like a human fingerprint, no two tigers have the same pattern of stripes on their coats. Scientists can use these distinctions to identify tigers in the wild."
+      ],
+      "likes": 1,
+      "comments": [
+        "Every time I see these majestic Bengal Tigers, I'm struck by their powerful presence and striking stripes. They're truly the kings of the jungle!"
+      ]
+    },
+    {
+      "id": "13",
+      "commonName": "Ostrich",
+      "scienceName": "Struthio camelus",
+      "animalUrl": "../images/ostrich.jpg",
+      "exhibit": "Africa",
+      "bio": "The world’s tallest and heaviest bird, the common ostrich is native to the grasslands and savannas of Africa. These birds are completely flightless but are incredibly swift runners due to their long, strong legs—in fact, they are the fastest two-legged animals on Earth.",
+      "diet": "Ostriches are omnivores, although most of their diet is plant-based. They mainly eat leafy greens, flowering plants, roots, grasses and succulents. They also occasionally feed on fallen fruit or small animals such as mice, lizards, frogs, grasshoppers and locusts.",
+      "carnivore": true,
+      "funFacts": [
+        "The fastest bird on land, ostriches can sprint up to 43 miles (70 kilometers) per hour."
+      ],
+      "likes": 1,
+      "comments": [
+        "I never knew ostriches could run that fast."
+      ]
+    },
+    {
+      "id": "14",
+      "commonName": "Zebra",
+      "scienceName": "Equus zebra",
+      "animalUrl": "../images/zebra.jpg",
+      "exhibit": "Africa",
+      "bio": "The mountain zebra (Equus zebra) prefers mountainous, woodland, or grassland habitats. There are two sub-species of mountain zebra–the Cape mountain zebra (South Africa) and Hartmann’s mountain zebra (southwestern Angola and Namibia).",
+      "diet": "Mountain zebras are herbivores. In the wild, they graze and browse for grasses, shrubs and leaves to eat. ",
+      "carnivore": false,
+      "funFacts": [
+        "While some may think the stripes are a camouflage against predators, they actually repel flies! Zebras have black skin, so the stripes that overlay their skin are white."
+      ],
+      "likes": 1,
+      "comments": [
+        "I could spend hours watching these zebras."
+      ]
+    },
+    {
+      "id": "15",
+      "commonName": "White Rhino",
+      "scienceName": "Ceratotherium simum",
+      "animalUrl": "../images/whiteRhino.jpg",
+      "exhibit": "Africa",
+      "bio": "White rhinos are the second-largest land mammal and their name comes from the Afrikaan’s, a West Germanic language word, Weit, which means wide and refers to the animal’s mouth.",
+      "diet": "Rhinos are herbivores who rely on a variety of plants for nourishment. In their natural habitat, these gigantic herbivores graze mostly on grass and the fruit and leaves of shrubs and trees. As grazers, as they eat continuously, rather than at specific times.",
+      "carnivore": false,
+      "funFacts": [
+        "Rhinos can often be seen rolling around in mud, giving themselves a protective 'mud coat’ to keep them cool, stop insects biting and get rid of any parasites."
+      ],
+      "likes": 1,
+      "comments": [
+        "I'm surprised by how massive rhinos are up close!"
+      ]
+    },
+    {
+      "id": "16",
+      "commonName": "Asian Elephant",
+      "scienceName": "Elephas maximus",
+      "animalUrl": "../images/asianElephant.jpg",
+      "exhibit": "Asia",
+      "bio": "The largest living land mammals, elephants are intelligent, social and vital to their ecosystems.",
+      "diet": "Asian Elephants feed primarily on grasses but also consume large amounts of browse, including leaves, roots, vines, twigs, shoots and bark, as well as fruit. Cultivated crops such as bananas and sugar cane are also a favored food, placing them in conflict with farmers.",
+      "carnivore": false,
+      "funFacts": [
+        "Elephants communicate over long distances using low-pitched sounds that are barely audible to humans. These powerful infrasonic rumbles contain specific messages that can be heard and understood by other elephants more than 2 miles away."
+      ],
+      "likes": 1,
+      "comments": [
+        "It's fascinating how elephants use their trunks like a hand to grab things!"
+      ]
+    },
+    {
+      "id": "17",
+      "commonName": "Addax",
+      "scienceName": "Addax nasomaculatus",
+      "animalUrl": "../images/addax.jpg",
+      "exhibit": "Africa",
+      "bio": "Specialized to live in deserts, the addax is a shy, cautious antelope notable for its long, twisted horns. This species was once abundant throughout Northern Africa, and now inhabits just a tiny fraction of its former range. ",
+      "diet": "Like other antelopes, addax are herbivores. They survive by eating desert grasses, shrubs and succulents, receiving most, if not all, of the water they require from the plants they feed on. They can also collect morning dew from leaves. Their bodies are so efficient at conserving water that they excrete dry feces and concentrated urine.",
+      "carnivore": false,
+      "funFacts": [
+        "Their pale coats help reflect the sun’s rays, which keeps them cool in extreme heat. "
+      ],
+      "likes": 1,
+      "comments": [
+        "The spiral horns on the addax are really striking and unique!"
+      ]
+    },
+    {
+      "id": "18",
+      "commonName": "California Sea Lion",
+      "scienceName": "Zalophus californianus",
+      "animalUrl": "../images/seaLion.jpg",
+      "exhibit": "North America",
+      "bio": "Sea lions are large, gregarious mammals found along the western coast of North America. In the water, their torpedo-shaped bodies can reach speeds of 25 to 30 mph!",
+      "diet": "They are generalist feeders, eating herring, rockfish, anchovies and other fish, krill, and invertebrates, such as squid and octopus. They typically feed toward the top of the water column but can dive as deep as 1,000 feet if necessary.",
+      "carnivore": true,
+      "funFacts": [
+        "Unlike seals, sea lions primarily use their fore-flippers to propel themselves through the water. They also have visible ear-flaps, while seals only have ear holes."
+      ],
+      "likes": 1,
+      "comments": [
+        "It's adorable how sea lions can be so playful and agile in the water!"
+      ]
+    },
+    {
+      "id": "19",
+      "commonName": "Beaver",
+      "scienceName": "Castor canadensis",
+      "animalUrl": "../images/beaver.jpg",
+      "exhibit": "North America",
+      "bio": "Beavers are the largest rodents in North America and one of the few species that significantly change their environment. By building dams, which form slow-moving ponds and reduce erosion, they provide habitat and resources for dozens of other species.",
+      "diet": "Beavers are herbivores, eating leaves, woody stems and aquatic plants. Their chief building materials are also their preferred foods: poplar, aspen, willow, birch and maple.",
+      "carnivore": false,
+      "funFacts": [
+        "A beaver's teeth, which are orange due to their protective coating, grow continuously throughout its lifetime."
+      ],
+      "likes": 1,
+      "comments": [
+        "I'm impressed by how skillfully beavers can build their dams, even in a zoo!"
+      ]
+    },
+    {
+      "id": "20",
+      "commonName": "Red Wolf",
+      "scienceName": "Canis rufus",
+      "animalUrl": "../images/redWolf.jpg",
+      "exhibit": "North America",
+      "bio": "The red wolf is a critically endangered canine native to the southeastern United States. Highly intelligent and sociable animals, red wolves were once abundant throughout their native range, but habitat loss and persecution by humans drove this species to the brink of extinction in the 20th century.",
+      "diet": "Red wolves are carnivores, eating up to five pounds of meat a day. Common prey animals include white-tailed deer, raccoons, turkeys, opossums, nutria, and smaller animals like rabbits, birds and mice. They will also eat carrion and have been known to eat insects, berries and some plant materials.",
+      "carnivore": true,
+      "funFacts": [
+        "Despite their fearsome reputation, red wolves are normally quite shy around people. They pose little to no threat around humans."
+      ],
+      "likes": 1,
+      "comments": [
+        "The red wolves are so elusive and majestic. It's a rare treat to see them up close!"
+      ]
+    },
+    {
+      "id": "21",
+      "commonName": "Giant Panda",
+      "scienceName": "Ailuropoda melanoleuca",
+      "animalUrl": "../images/giantPanda.jpg",
+      "exhibit": "Asia",
+      "bio": "High in dense bamboo forests in the misty, rainy mountains of southwestern China lives one of the world's rarest mammals: the giant panda, also called the panda. Only about 1,500 of these black-and-white bears survive in the wild.",
+      "diet": "Pandas eat almost nothing but bamboo shoots and leaves. Occasionally they eat other vegetation, fish, or small mammals, but bamboo accounts for 99 percent of their diets.",
+      "carnivore": false,
+      "funFacts": [
+        "Pandas eat fast, they eat a lot, and they spend about 12 hours a day doing it. The reason: They digest only about a fifth of what they eat."
+      ],
+      "likes": 1,
+      "comments": [
+        "Pandas look so cuddly and peaceful when they're munching on bamboo!",
+        "I like Pandas. They are super cute and cuddly. "
+      ]
+    },
+    {
+      "id": "22",
+      "commonName": "Red Panda",
+      "scienceName": "Ailurus fulgens",
+      "animalUrl": "../images/redPanda.jpg",
+      "exhibit": "Asia",
+      "bio": "Red pandas, like giant pandas, are bamboo eaters native to Asia’s high forests. Despite these similarities and their shared name, the two species are not closely related. Red pandas are much smaller than giant pandas and are the only living member of their taxonomic family.",
+      "diet": "Bamboo constitutes about 95% of the red panda's diet. Unlike giant pandas that feed on nearly every above-ground portion of bamboo (including the culm, or woody stem), red pandas feed selectively on the most nutritious leaf tips and, when available, tender shoots.",
+      "carnivore": false,
+      "funFacts": [
+        "Red pandas share the giant panda's pseudo-thumb, a modified wrist bone used to grasp bamboo when feeding."
+      ],
+      "likes": 1,
+      "comments": [
+        "Red pandas are so cute and fluffy, especially when they're climbing around in the trees!"
+      ]
+    }
+  ],
+  "events": []
 }

@@ -7,6 +7,7 @@ import Animal from "./Components/Animal";
 import Events from "./Components/Events";
 import About from "./Components/About";
 import Map from "./Components/Map"
+import AnimalInfo from "./Components/AnimalChildren/AnimalInfo"
 
 
 import { Routes, Route } from "react-router-dom";
@@ -20,17 +21,16 @@ function App() {
   .then(r => r.json())
   .then(setAnimals)} , [] )
 
-  // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
-
   return (
-      <div>
+      <div className="App" >
       <Header   />
       <Routes>
-          <Route path="/"  element={<Home     />} />
-          <Route path="animals" element={<Animal   />}  />
-          <Route path="events"  element={<Events    />}   />
-          <Route path="about"   element={<About     />}   />
-          <Route path="map"     element={<Map       />}   />
+          <Route path="/"         element={<Home     />} />
+          <Route path="/animals" element={<Animal  animals={animals}/>}  />
+          <Route path="/animals/:id" element={<AnimalInfo  />}/>
+          <Route path="/events"    element={<Events    />}   />
+          <Route path="/about"     element={<About     />}   />
+          <Route path="/map"       element={<Map       />}   />
       </Routes>
       </div>
       

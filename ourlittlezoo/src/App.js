@@ -24,10 +24,32 @@ function App() {
   useEffect(() => {
   fetch("http://localhost:3000/events")
     .then(r => r.json())
-    .then(setEvents)}, [] )
+    .then(eventsArr => eventsArr.length > 0 && randomEvents(eventsArr)) }, [] )
+
+    function randomEvents(eventsArr) {
+      
+      // function getRandomNumber() {
+        let randomEvent1 = Math.floor(Math.random() * eventsArr.length) + 1;
+        let randomEvent2 = Math.floor(Math.random() * eventsArr.length) + 1;
+        while (randomEvent1 === randomEvent2) {
+          return (randomEvent2 = Math.floor(Math.random() * eventsArr.length));
+        }
+        let randomEvent3 = Math.floor(Math.random() * eventsArr.length) + 1;
+        while (randomEvent1 === randomEvent3 || randomEvent2 === randomEvent3) {
+          return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
+        }
+        // while (randomEvent2 === randomEvent3) {
+        //   return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
+        // }
+        // return randomEvent1;
+      // }
+      
+      setEvents(eventsArr.filter(event => event.id === randomEvent1 || event.id === randomEvent2 || event.id === randomEvent3))
+      console.log(randomEvent1,randomEvent2,randomEvent3)
+    }
 
   // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
-
+console.log(events)
   return (
       <div>
       <Header   />

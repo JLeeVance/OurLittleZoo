@@ -13,7 +13,7 @@ function AnimalInfoBox({
     likes,
     scienceName
  }){
-
+    console.log(commonName);
 
     return(
         <div>

@@ -1,9 +1,11 @@
+import AnimalInfo from "./AnimalChildren/AnimalInfo";
 
 function Home(){
 
 
     return (
-        <p>Home Page!</p>
+        <AnimalInfo         />
+        
     )
 
 }

@@ -9,7 +9,7 @@ function AnimalCard({
     onLearnMore
 }){
 
-
+    console.log(id)
     return(
         <card onClick={onLearnMore}className="animalCard">
             <h3>{commonName}</h3>

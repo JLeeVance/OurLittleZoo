@@ -5,7 +5,7 @@ import AnimalInfoBox from "./AnimalInfoBox";
 function AnimalInfo(){
 
     const { id } = useParams();
-    console.log(id)
+    console.log("here")
     const [ singleAniObj , setSingleAniObj ] = useState({})
 
     useEffect(() => {

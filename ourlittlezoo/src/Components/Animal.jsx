@@ -22,11 +22,6 @@ function Animal({ animals }){
                 <SearchBar onSearchChange={setFormData} formData={formData}/>
                 <AnimalContainer animals={searchedAnimals} onLearnMore={handleHideComp}   /> 
             </div>}  
-            
-            
-            <Routes>
-                <Route path={"animals/:id"} element={<AnimalInfo  />}/>
-            </Routes>
           
         </div>
     )

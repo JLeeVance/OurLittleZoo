@@ -356,7 +356,7 @@
         "id": 8,
         "eventName": "Lion cubs, Aweeee!",
         "locationInZoo": "Africa",
-        "animalsInvoled": [ "lion" ],
+        "animalsInvolved": [ "lion" ],
         "eventDescription": "Join us in Africa for an insider glimpse on the growth stages of Lions. Meet some of our cuddly cubs, and get the chance to win a backstage pass where you will meet the star of our show, Nala, up-close and personal.",
         "zooHandler": "Heather",
         "time": "1pm"

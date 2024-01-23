@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import EventContainer from './EventChildComponents/EventContainer';
 
-function Events(){
-
-    const [events, setEvents] = useState([]);
-
+function Events({events}){
 
     return (
         <div>
             <h1>Events Page</h1>
-            {/* <EventContainer /> */}
+            <EventContainer events={events}/>
         </div>
     )
 }

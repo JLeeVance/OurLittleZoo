@@ -21,6 +21,11 @@ function App() {
   .then(r => r.json())
   .then(setAnimals)} , [] )
 
+  useEffect(() => {
+  fetch("http://localhost:3000/events")
+    .then(r => r.json())
+    .then(setEvents)}, [] )
+
   // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
 
   return (
@@ -29,7 +34,7 @@ function App() {
       <Routes>
           <Route path="/"  element={<Home     />} />
           <Route path="animals" element={<Animal   />}  />
-          <Route path="events"  element={<Events    />}   />
+          <Route path="events"  element={<Events events={events}/>}/>
           <Route path="about"   element={<About     />}   />
           <Route path="map"     element={<Map       />}   />
       </Routes>

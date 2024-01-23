@@ -1,21 +1,44 @@
 import React, { useState } from 'react';
 
-function EventDetails({events}) {
+function EventDetails({
+
+    id,
+    eventName,
+    locationInZoo,
+    animalsInvolved,
+    eventDescription,
+    zooHandler,
+    time
+
+}){
+
+    const [showDetails, setShowDetails] = useState(false);
+
+    function handleClick(){
+        setShowDetails(!showDetails);
+        
+        if(showDetails === true){
+            setShowDetails(false);
+        }
+        else{
+            setShowDetails(true);
+        }
+    }
 
     return (
-        <>
-
-            {events.map((event) => (
-                <li key={event.id}>
-                    <h3>{event.eventName}</h3>
-                    <p>Location: {event.locationInZoo}</p>
-                    <p>Animals Involved: {event.animalsInvoled}</p>
-                    <p>Description: {event.eventDescription}</p>
-                    <p>Handler: {event.zooHandler}</p>
-                    <p>Time: {event.time}</p>
-                </li>
-            ))}
-        </>
+        <div className='card' onClick={handleClick}>
+            <h3>{eventName}</h3>
+            <p>Location: {locationInZoo}</p>
+            <p>Animals: {animalsInvolved}</p>
+            <p>Time: {time}</p>
+            {showDetails ? (
+                <div>
+                    <p>Description: {eventDescription}</p>
+                    <p>Handler: {zooHandler}</p>
+                </div>
+            ) : null}
+            
+        </div>
     )
 }
 

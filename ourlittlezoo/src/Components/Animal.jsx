@@ -1,10 +1,34 @@
+import SearchBar from "./AnimalChildren/SearchBar";
+import AnimalContainer from "./AnimalChildren/AnimalContainer";
+import AnimalInfo from "./AnimalChildren/AnimalInfo";
+import { useState } from "react";
+import { Route , Routes } from "react-router-dom";
 
+function Animal({ animals }){
 
-function Animal(){
+    const [ formData , setFormData ] = useState("");
+    const [ showAll , setShowAll ] = useState(true);
 
+    const searchedAnimals = animals.filter((animalObj) => animalObj.commonName.toLowerCase().includes(formData.toLowerCase()))
+
+    function handleHideComp(){
+        setShowAll(!showAll)
+    };
 
     return (
-        <h1>Animal Parent Comp</h1>
+        <div>
+            {showAll && 
+            <div>
+                <SearchBar onSearchChange={setFormData} formData={formData}/>
+                <AnimalContainer animals={searchedAnimals} onLearnMore={handleHideComp}   /> 
+            </div>}  
+            
+            
+            <Routes>
+                <Route path={"animals/:id"} element={<AnimalInfo  />}/>
+            </Routes>
+          
+        </div>
     )
 }
 

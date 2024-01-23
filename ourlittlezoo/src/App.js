@@ -23,11 +23,11 @@ function App() {
   // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
 
   return (
-      <div>
+      <div className="App" >
       <Header   />
       <Routes>
           <Route path="/"  element={<Home     />} />
-          <Route path="animals" element={<Animal   />}  />
+          <Route path="animals/*" element={<Animal  animals={animals}/>}  />
           <Route path="events"  element={<Events    />}   />
           <Route path="about"   element={<About     />}   />
           <Route path="map"     element={<Map       />}   />

@@ -1,12 +1,13 @@
+import React from 'react';
+import EventContainer from './EventChildComponents/EventContainer';
 
-function Events(){
-
+function Events({events}){
 
     return (
-        <>
+        <div>
             <h1>Events Page</h1>
-            <p>Yay</p>
-        </>
+            <EventContainer events={events}/>
+        </div>
     )
 }
 

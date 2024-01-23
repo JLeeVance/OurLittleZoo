@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
 
   const [ animals , setAnimals ] = useState([]);
+  const [ events, setEvents ] = useState([]);
 
   useEffect(() => {
   fetch("http://localhost:3000/animals")

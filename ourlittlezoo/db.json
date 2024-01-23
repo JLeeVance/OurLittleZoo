@@ -289,6 +289,78 @@
         
     ],
     "events": [
+        {
+        "id": 1,
+        "eventName":    "Feeding Frenzy with the Flamingos!",
+        "locationInZoo": 	"North America",
+        "animalsInvolved":  [  "Flamingo" ],
+        "eventDescription": "Bring the whole family to witness our Flamingoes gobble up their lunch! Cups of krill will be available for purchase if you are feeling a little WILD today!",
+        "zooHandler":	"Becky",
+        "time": "1pm"
+        },
+        {
+        "id": 2,
+        "eventName":    "The African Safari",
+        "locationInZoo": 	"Africa",
+        "animalsInvolved":  [  "Giraffe" , "Zebra" , "Lion" ],
+        "eventDescription": "Learn about some of our beautiful safari animals that we have on exhibit! One of our in-house conservationist will lead a discussion on the animals, their natural habitat, and how we can help their survival." ,
+        "zooHandler":	"Larry",
+        "time": "11am"
+        },
+        {
+        "id": 3,
+        "eventName": "The Jungle Walk",
+        "locationInZoo": "Asia",
+        "animalsInvolved":  [ "Orangutans" ],
+        "eventDescription": "This educational and upclose encounter will leave your primate heart full of cuddles and information. Join our education specialist to learn about the Orangutans and how their bodies support them as they traverse through the trees.",
+        "zooHandler":	"Joey",
+        "time": "3pm"
+        },	   
+        {
+        "id": 4,
+        "eventName":    "Main Street Parade",
+        "locationInZoo": 	"Main Street",
+        "animalsInvolved":  [ ],
+        "eventDescription": "Our in-house entertainment team puts on a daily Parade celebrating the animals that fill our hearts with joy. Come watch our talent sing, dance, and party their way through Main Street to end off the day!",
+        "zooHandler": "n/a",
+        "time": "5pm"
+        },
+        {
+        "id": 5,
+        "eventName":  "Lions, will they ACTUALLY eat me?",
+        "locationInZoo": 	"Africa",
+        "animalsInvolved":  [ "lions" ],
+        "eventDescription": "Join our Lion Specialist, Mark, for a fireside chat about the strength of this Big Cat.",
+        "zooHandler":	"Mark",
+        "time": "10am"
+        },
+        {
+        "id": 6,
+        "eventName":  "The Panda within.",
+        "locationInZoo": 	"Asia",
+        "animalsInvolved":  [ "panda"  ],
+        "eventDescription": "Start your morning off the right way with some cute and cuddly, Panda yoga! While the Pandas might not have a yoga mat, as you stretch and strengthen your way to a better you you’ll giggle over their silly antics as they mock our practice.",
+        "zooHandler":	"Lea-Anne",
+        "time": "9am"
+        },
+        {
+        "id": 7,
+        "eventName": "The American Otter, just how cuddly are they?",
+        "locationInZoo": "North America",
+        "animalsInvolved": [ "otter" ],
+        "eventDescription": "We all know they are cute and we all know they like to cuddle each other, but just how much of a predator is the North American River Otter? Join us for this semi-educational event and learn all about the hunting habits of the otter; could YOU cuddle with them?",
+        "zooHandler": 	"Skip",
+        "time": "2pm"
+        },
+        {
+        "id": 8,
+        "eventName": "Lion cubs, Aweeee!",
+        "locationInZoo": "Africa",
+        "animalsInvoled": [ "lion" ],
+        "eventDescription": "Join us in Africa for an insider glimpse on the growth stages of Lions. Meet some of our cuddly cubs, and get the chance to win a backstage pass where you will meet the star of our show, Nala, up-close and personal.",
+        "zooHandler": "Heather",
+        "time": "1pm"
+        }
 
     ]
 

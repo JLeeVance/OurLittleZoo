@@ -1,5 +1,5 @@
 
-import map from "./map.png"
+import map from "./siteImages/map.png"
 
 function Map(){
 

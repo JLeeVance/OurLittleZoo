@@ -1,10 +1,19 @@
-
+import Bio from "./AboutChildren/Bio";
+import SupportZooLink from "./AboutChildren/SupportZooLink";
+import Hours from "./AboutChildren/Hours";
+import Faq from "./AboutChildren/Faq"; 
 
 function About(){
 
 
     return(
-        <h1>About Page</h1>
+    <div>
+        <SupportZooLink     />
+        <Bio    />
+        <Hours  />
+        <Faq    />
+        
+    </div>
     )
 }
 

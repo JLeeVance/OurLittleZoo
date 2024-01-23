@@ -9,11 +9,10 @@ function AnimalCard({
     onLearnMore
 }){
 
-    console.log(id)
     return(
         <card onClick={onLearnMore}className="animalCard">
             <h3>{commonName}</h3>
-            <img src={animalUrl} className="cardImg" />
+            <img alt={commonName} src={animalUrl} className="cardImg" />
             <p>Exhibit: {exhibit} </p>
             <Link to={`/animals/${id}`} >Learn More!</Link>
         </card>

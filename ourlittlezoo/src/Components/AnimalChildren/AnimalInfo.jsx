@@ -5,18 +5,18 @@ import AnimalInfoBox from "./AnimalInfoBox";
 function AnimalInfo(){
 
     const { id } = useParams();
-    console.log("here")
+
     const [ singleAniObj , setSingleAniObj ] = useState({})
 
     useEffect(() => {
         fetch(`http://localhost:3000/animals/?id=${id}`)
         .then(r => r.json())
         .then(animalArray => setSingleAniObj(animalArray[0]))
-    } , [id] )
+    } , [] )
 
     return(
         <div>
-            <AnimalInfoBox  {...singleAniObj}  />
+            {Object.keys(singleAniObj).length > 0 && <AnimalInfoBox  {...singleAniObj}  /> }
 
         </div>
         

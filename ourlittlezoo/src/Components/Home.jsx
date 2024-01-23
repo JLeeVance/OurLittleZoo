@@ -1,10 +1,10 @@
-import AnimalInfo from "./AnimalChildren/AnimalInfo";
+
 
 function Home(){
 
 
     return (
-        <AnimalInfo         />
+        <p>Home</p>
         
     )
 

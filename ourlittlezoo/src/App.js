@@ -21,8 +21,6 @@ function App() {
   .then(r => r.json())
   .then(setAnimals)} , [] )
 
-  // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
-
   return (
       <div className="App" >
       <Header   />

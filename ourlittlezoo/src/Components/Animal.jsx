@@ -1,8 +1,6 @@
 import SearchBar from "./AnimalChildren/SearchBar";
 import AnimalContainer from "./AnimalChildren/AnimalContainer";
-import AnimalInfo from "./AnimalChildren/AnimalInfo";
 import { useState } from "react";
-import { Route , Routes } from "react-router-dom";
 
 function Animal({ animals }){
 

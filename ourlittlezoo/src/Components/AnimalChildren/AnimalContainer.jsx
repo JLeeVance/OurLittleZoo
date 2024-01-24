@@ -7,7 +7,7 @@ function AnimalContainer({ animals }){
     return(
         <div className="">
             <h1>Animals on Exhibit!</h1>
-            <nav className="ui  grid">
+            <nav className="ui grid">
                 {animalsToDisplay}
             </nav>
         </div>

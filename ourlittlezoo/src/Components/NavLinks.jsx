@@ -4,13 +4,13 @@ function NavLinks(){
 
 
     return(
-        <>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/animals">Animals & Exhibits</NavLink>
-            <NavLink to="/events">Events</NavLink>
-            <NavLink to="/map">Map</NavLink>
-            <NavLink to="/about">About</NavLink>
-        </>
+        <div className="ui five menu item">
+            <NavLink className="item" to="/">Home</NavLink>
+            <NavLink className="item" to="/animals">Animals & Exhibits</NavLink>
+            <NavLink className="item" to="/events">Events</NavLink>
+            <NavLink className="item" to="/map">Map</NavLink>
+            <NavLink className="item" to="/about">About</NavLink>
+        </div>
     )
 }
 

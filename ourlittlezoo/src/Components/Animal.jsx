@@ -5,21 +5,16 @@ import { useState } from "react";
 function Animal({ animals }){
 
     const [ formData , setFormData ] = useState("");
-    const [ showAll , setShowAll ] = useState(true);
 
     const searchedAnimals = animals.filter((animalObj) => animalObj.commonName.toLowerCase().includes(formData.toLowerCase()))
 
-    function handleHideComp(){
-        setShowAll(!showAll)
-    };
-
+  
     return (
         <div>
-            {showAll && 
             <div>
                 <SearchBar onSearchChange={setFormData} formData={formData}/>
-                <AnimalContainer animals={searchedAnimals} onLearnMore={handleHideComp}   /> 
-            </div>}  
+                <AnimalContainer animals={searchedAnimals}  /> 
+            </div>  
           
         </div>
     )

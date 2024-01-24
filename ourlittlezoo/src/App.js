@@ -30,23 +30,24 @@ function App() {
 
     function randomEvents(eventsArr) {
       
-        let randomEvent1 = Math.floor(Math.random() * eventsArr.length) + 1;
-        let randomEvent2 = Math.floor(Math.random() * eventsArr.length) + 1;
+        let randomEvent1 = Math.floor(Math.random() * eventsArr.length);
+        let randomEvent2 = Math.floor(Math.random() * eventsArr.length);
         while (randomEvent1 === randomEvent2) {
           return (randomEvent2 = Math.floor(Math.random() * eventsArr.length));
         }
-        let randomEvent3 = Math.floor(Math.random() * eventsArr.length) + 1;
+        let randomEvent3 = Math.floor(Math.random() * eventsArr.length);
         while (randomEvent1 === randomEvent3 || randomEvent2 === randomEvent3) {
           return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
         }
       
       setEvents(eventsArr.filter(event => event.id === randomEvent1 || event.id === randomEvent2 || event.id === randomEvent3))
     }
+
   return (
       <div className="App" >
       <Header   />
       <Routes>
-          <Route path="/"         element={<Home     />} />
+          <Route path="/"         element={<Home events={events} animals={animals}/>} />
           <Route path="/animals" element={<Animal  animals={animals}/>}  />
           <Route path="/animals/:id" element={<AnimalInfo  />}/>
           <Route path="/events"    element={events.length >= 3 ? <Events events={events}/> : <div>loading</div>}   />

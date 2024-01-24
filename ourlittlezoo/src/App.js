@@ -30,7 +30,6 @@ function App() {
 
     function randomEvents(eventsArr) {
       
-      // function getRandomNumber() {
         let randomEvent1 = Math.floor(Math.random() * eventsArr.length) + 1;
         let randomEvent2 = Math.floor(Math.random() * eventsArr.length) + 1;
         while (randomEvent1 === randomEvent2) {
@@ -40,19 +39,12 @@ function App() {
         while (randomEvent1 === randomEvent3 || randomEvent2 === randomEvent3) {
           return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
         }
-        // while (randomEvent2 === randomEvent3) {
-        //   return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
-        // }
-        // return randomEvent1;
-      // }
       
       setEvents(eventsArr.filter(event => event.id === randomEvent1 || event.id === randomEvent2 || event.id === randomEvent3))
       console.log(randomEvent1,randomEvent2,randomEvent3)
     }
 
-  // const animalsToTest = animals.map((animalObj) => <img src={animalObj.animalUrl}  />)
-console.log(events)
-
+    console.log(events);
   return (
       <div className="App" >
       <Header   />
@@ -60,7 +52,7 @@ console.log(events)
           <Route path="/"         element={<Home     />} />
           <Route path="/animals" element={<Animal  animals={animals}/>}  />
           <Route path="/animals/:id" element={<AnimalInfo  />}/>
-          <Route path="/events"    element={<Events events={events}/>}   />
+          <Route path="/events"    element={events.length >= 3 ? <Events events={events}/> : <div>loading</div>}   />
           <Route path="/about"     element={<About     />}   />
           <Route path="/map"       element={<Map       />}   />
       </Routes>

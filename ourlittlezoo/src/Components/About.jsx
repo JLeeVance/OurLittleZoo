@@ -7,12 +7,17 @@ function About(){
 
 
     return(
-    <div>
-        <SupportZooLink     />
-        <Bio    />
-        <Hours  />
-        <Faq    />
+    <div className="ui stackable grid">
         
+        <div className="one column row">
+            <h1 className="ui header " >About</h1>
+            <SupportZooLink     />
+        </div>
+        <Bio    />
+        <div className="two column row">
+            <Hours  />
+            <Faq    />
+        </div>
     </div>
     )
 }

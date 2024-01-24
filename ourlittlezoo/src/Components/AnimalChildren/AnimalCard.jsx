@@ -5,16 +5,15 @@ function AnimalCard({
     animalUrl,
     commonName,
     exhibit,
-    id,
-    onLearnMore
+    id
 }){
 
     return(
-        <card onClick={onLearnMore}className="animalCard">
-            <h3>{commonName}</h3>
+        <card className="ui card">
+            <h4 className="ui header" >{commonName}</h4>
             <img alt={commonName} src={animalUrl} className="cardImg" />
-            <p>Exhibit: {exhibit} </p>
-            <Link to={`/animals/${id}`} >Learn More!</Link>
+            <h4 className="ui sub header" >Exhibit: {exhibit} </h4>
+            <Link to={`/animals/${id}`} className="ui button">Learn More!</Link>
         </card>
     )
 }

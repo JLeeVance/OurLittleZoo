@@ -41,10 +41,8 @@ function App() {
         }
       
       setEvents(eventsArr.filter(event => event.id === randomEvent1 || event.id === randomEvent2 || event.id === randomEvent3))
-      console.log(randomEvent1,randomEvent2,randomEvent3)
     }
 
-    // console.log(events);
   return (
       <div className="App" >
       <Header   />
@@ -57,9 +55,6 @@ function App() {
           <Route path="/map"       element={<Map       />}   />
       </Routes>
       </div>
-      
-      
-   
   );
 }
 

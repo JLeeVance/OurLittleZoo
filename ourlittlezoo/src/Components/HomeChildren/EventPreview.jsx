@@ -1,13 +1,14 @@
+import React from 'react';
 import EventPreviewCard from "./EventPreviewCard";
 
 
-function EventPreview() {
+function EventPreview({ events }) {
 
+    const eventsToRender = events.map((eventObj) => <EventPreviewCard key={eventObj.id} {...eventObj}/>);    
 
     return (
         <div>
-            <p>Event Preview</p>
-            <EventPreviewCard />
+            {eventsToRender}
         </div>
     )
 }

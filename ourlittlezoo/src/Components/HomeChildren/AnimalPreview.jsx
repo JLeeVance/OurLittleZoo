@@ -11,7 +11,6 @@ function AnimalPreview({ animals }) {
 
         return (
             <div>
-                <p>Animal Preview</p>
                 {animalsToDisplay}
             </div>
         )

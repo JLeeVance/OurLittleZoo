@@ -9,7 +9,6 @@ function Home( {events, animals} ) {
 
     return (
         <div>
-            <p>Home</p>
             <AnimalPreview animals={animals} />
             <EventPreview events={events} />
             <SupportZoo />

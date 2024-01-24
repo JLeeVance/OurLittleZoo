@@ -1,5 +1,6 @@
-import { useState , useEffect } from "react";
+import { useState , useEffect, Suspense } from "react";
 import './App.css';
+
 
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -26,31 +27,62 @@ function App() {
   useEffect(() => {
   fetch("http://localhost:3000/events")
     .then(r => r.json())
-    .then(eventsArr => eventsArr.length > 0 && randomEvents(eventsArr)) }, [] )
+    .then(eventsArr =>  setEvents(eventsArr)) }, [] )
 
-    function randomEvents(eventsArr) {
+    // eventsArr.length > 0 &&
+    function getRandom(arr, n) {
+      var result = new Array(n),
+          len = arr.length,
+          taken = new Array(len);
+      if (n > len)
+          throw new RangeError("getRandom: more elements taken than available");
+      while (n--) {
+          var x = Math.floor(Math.random() * len);
+          result[n] = arr[x in taken ? taken[x] : x];
+          taken[x] = --len in taken ? taken[len] : len;
+      }
+      return result
+    };
+
+  let showEvents = [];
+  if (events.length){
+    showEvents = getRandom(events, 3)
+  }
+
+
+
+
+
+
+
+  function randomEvents(eventsArr) {
       
-        let randomEvent1 = Math.floor(Math.random() * eventsArr.length);
-        let randomEvent2 = Math.floor(Math.random() * eventsArr.length);
-        while (randomEvent1 === randomEvent2) {
-          return (randomEvent2 = Math.floor(Math.random() * eventsArr.length));
-        }
-        let randomEvent3 = Math.floor(Math.random() * eventsArr.length);
-        while (randomEvent1 === randomEvent3 || randomEvent2 === randomEvent3) {
-          return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
-        }
-      
-      setEvents(eventsArr.filter(event => event.id === randomEvent1 || event.id === randomEvent2 || event.id === randomEvent3))
-    }
+    let randomEvent1 = Math.floor(Math.random() * eventsArr.length) + 1;
+      let randomEvent2 = Math.floor(Math.random() * eventsArr.length) + 1;
+      while (randomEvent1 == randomEvent2) {
+        return (randomEvent2 = Math.floor(Math.random() * eventsArr.length));
+      }
+      let randomEvent3 = Math.floor(Math.random() * eventsArr.length) + 1;
+      while (randomEvent1 == randomEvent3 || randomEvent2 == randomEvent3) {
+        return (randomEvent3 = Math.floor(Math.random() * eventsArr.length));
+      }
+      console.log(randomEvent1 , randomEvent2 , randomEvent3)
+    setEvents(eventsArr.filter(event => event.id == randomEvent1 || event.id == randomEvent2 || event.id == randomEvent3))
+  }
 
   return (
       <div className="App" >
       <Header   />
       <Routes>
-          <Route path="/"         element={<Home events={events} animals={animals}/>} />
+          <Route path="/"         element={<Home events={showEvents} animals={animals}/>} />
           <Route path="/animals" element={<Animal  animals={animals}/>}  />
           <Route path="/animals/:id" element={<AnimalInfo  />}/>
-          <Route path="/events"    element={events.length >= 3 ? <Events events={events}/> : <div>loading</div>}   />
+          <Route path="/events"    element={<Suspense fallback={<div>loading</div>}>
+                                                <Events events={showEvents}/>
+                                            </Suspense>}  />
+            
+            
+            {/* // events.length >= 2 ? <Events events={events}/> : <div>loading</div>}   /> */}
           <Route path="/about"     element={<About     />}   />
           <Route path="/map"       element={<Map       />}   />
       </Routes>

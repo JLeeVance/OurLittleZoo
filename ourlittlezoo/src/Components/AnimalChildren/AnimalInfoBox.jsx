@@ -15,29 +15,34 @@ function AnimalInfoBox({
  }){
     // console.log(funFacts)
 
-    const factsToRender = funFacts.map((fact) => <li key={id}>{fact}</li> )
+    const factsToRender = funFacts.map((fact) => <li className="ui comments" key={id}>{fact}</li> )
 
     return(
         <div>
-            <h1> {commonName} </h1>
-            <h2> {scienceName} </h2>
-            <img alt={commonName} src={animalUrl} />
-            <div>
-            <h3>Bio</h3>
+            <div className="ui image">
+                <h1 className="ui header"> {commonName} </h1>
+                <h3 className="ui header"> {scienceName} </h3>
+                <p className="ui sub header">Exhibit: {exhibit}</p>
+                <img alt={commonName} src={animalUrl} />
             </div>
-            <p>Exhibit: {exhibit}</p>
-            <span>{bio}</span>
-            <div>
-                <h3>Diet</h3>
+            <div></div>
+            <div className="ui segment">
+                <h3 className="ui header">Bio</h3>
+                <span className="">{bio}</span>
+            </div>
+            <div className="ui segment">
+                <h3 className="ui header">Diet</h3>
                 <span>{diet}</span>
             </div>
-            <div>
-                <h3>Fun Facts</h3>
-                <ul>
+            <div className="ui segment">
+                <h3 className="ui header">Fun Facts</h3>
+                <div>
                     {factsToRender}
-                </ul>
+                </div>
             </div>
-            <Comments   comments={comments}/>
+            <div className="ui segment">
+                <Comments  comments={comments}/>
+            </div>
 
         </div>
     )

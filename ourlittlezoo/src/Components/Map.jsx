@@ -5,9 +5,9 @@ function Map(){
 
 
     return (
-        <div>
-        <h1>Zoo Map</h1>
-        <img  src={map} />
+        <div className="ui container">
+            <h1 className="ui header">Zoo Map</h1>
+            <img className="ui fluid rounded image" src={map} />
         </div>
     )
 }

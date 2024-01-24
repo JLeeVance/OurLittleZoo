@@ -5,12 +5,11 @@ function AnimalCard({
     animalUrl,
     commonName,
     exhibit,
-    id,
-    onLearnMore
+    id
 }){
 
     return(
-        <card onClick={onLearnMore}className="animalCard">
+        <card className="animalCard">
             <h3>{commonName}</h3>
             <img alt={commonName} src={animalUrl} className="cardImg" />
             <p>Exhibit: {exhibit} </p>

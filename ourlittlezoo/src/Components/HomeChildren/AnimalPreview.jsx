@@ -5,18 +5,18 @@ function AnimalPreview({ animals }) {
 
     if (animals.length > 3) {
         const startIndex = Math.floor(Math.random() * animals.length - 2);
-        const animalsToDisplay = animals.slice(startIndex, startIndex + 3).map((animalObj) =>(
-            <AnimalImg key={animalObj.id} {...animalObj} />
+        const animalsToDisplay = animals.slice(startIndex, startIndex + 3).map((animalObj) => (
+            <div className="column" >
+                <AnimalImg  key={animalObj.id} {...animalObj} />
+            </div>
         ))
 
         return (
-            <div>
+            <div className="ui three column grid" >
                 {animalsToDisplay}
             </div>
         )
     }
-
-    // const animalsToDisplay = animals.map((animalObj) => <AnimalImg key={animalObj.id} {...animalObj}   />)
     console.log(animals)
 }
 

@@ -10,13 +10,19 @@ function Animal({ animals }){
 
   
     return (
-        <div>
-            <div>
+        <div className="ui container grid">
+            <h1 style={{paddingTop: 30}} className="ui header center aligned">Animals on Exhibit!</h1>
+            <div className="sixteen wide column" style={{paddingTop:2}}>
                 <SearchBar onSearchChange={setFormData} formData={formData}/>
+            </div>
+            <div className="sixteen wide column">
                 <AnimalContainer animals={searchedAnimals}  /> 
+            </div>
+
+                {/* <AnimalContainer animals={searchedAnimals}  />  */}
+
             </div>  
           
-        </div>
     )
 }
 

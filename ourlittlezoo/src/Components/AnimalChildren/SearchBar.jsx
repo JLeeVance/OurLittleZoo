@@ -4,9 +4,9 @@ function SearchBar({ onSearchChange , formData }){
 
 
     return(
-        <div className="ui container">
+        <div>
             <form className="ui form">
-                <input value={formData} type="text" onChange={(e) => onSearchChange(e.target.value)} />
+                <input placeholder="Search by name..." className="ui form input" value={formData} type="text" onChange={(e) => onSearchChange(e.target.value)} />
             </form>
         </div>
     )

@@ -1,4 +1,5 @@
 import Comments from "./Comments";
+import {Link} from "react-router-dom"
 
 function AnimalInfoBox({
     animalUrl,
@@ -19,13 +20,17 @@ function AnimalInfoBox({
 
     return(
         <div>
-            <div className="ui image">
-                <h1 className="ui header"> {commonName} </h1>
-                <h3 className="ui header"> {scienceName} </h3>
-                <p className="ui sub header">Exhibit: {exhibit}</p>
-                <img alt={commonName} src={animalUrl} />
+            <div className="ui container grid" style={{maxHeight:150}}>
+                <div className="fourteen wide column float left">
+                    <h1 className="ui header"> {commonName} </h1>
+                    <h3 className="ui header"> {scienceName} </h3>
+                    <p className="ui sub header">Exhibit: {exhibit}</p>
+                </div>
+                <div className="two wide column float right">
+                    <Link className="ui button" to="/animals/">Back to Exhibits</Link>
+                </div>
             </div>
-            <div></div>
+            <img className="ui image" alt={commonName} src={animalUrl} />
             <div className="ui segment">
                 <h3 className="ui header">Bio</h3>
                 <span className="">{bio}</span>
@@ -40,7 +45,7 @@ function AnimalInfoBox({
                     {factsToRender}
                 </div>
             </div>
-            <div className="ui segment">
+            <div className="ui segment center aligned">
                 <Comments  comments={comments}/>
             </div>
 

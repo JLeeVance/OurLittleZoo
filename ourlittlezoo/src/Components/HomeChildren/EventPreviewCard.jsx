@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function EventPreviewCard({
     id,
@@ -12,13 +13,13 @@ function EventPreviewCard({
 
 
     return (
-        <div className='card'>
-            <h3>{eventName}</h3>
+        <NavLink to="/events" className='ui card'>
+            <h3 className='ui header'>{eventName}</h3>
             <p>Location: {locationInZoo}</p>
             <p>Animals: {animalsInvolved}</p>
             <p>Time: {time}</p>
             
-        </div>
+        </NavLink>
     )
 }
 

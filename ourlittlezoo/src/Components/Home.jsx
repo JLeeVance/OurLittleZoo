@@ -6,15 +6,23 @@ import SupportZoo from './HomeChildren/SupportZoo';
 
 function Home( {events, animals} ) {
 
-
     return (
-        <div>
-            <AnimalPreview animals={animals} />
+        <>
+            <div className='two wide column float left'>
             <EventPreview events={events} />
-            <SupportZoo />
-        </div>
-        
-        
+            </div> 
+            <div className='ten wide column'>
+                <div>
+                    <div style={{padding : 50}}>
+                        <h1 className='ui header'>some of our friends currently on Exhibit...</h1>
+                    </div>
+                    <AnimalPreview animals={animals} />
+                </div>
+            </div>
+                <div className='four wide column float right'>
+                <SupportZoo  />
+            </div>
+        </>
     )
 
 }

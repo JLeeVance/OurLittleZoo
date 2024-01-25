@@ -24,19 +24,10 @@ function AnimalPreview({ animals }) {
 
     const animalsToDisplay = selectedAnimals.map((animalObj) => {
         return (
-            <div className="column" >
-                <AnimalImg  key={animalObj.id} {...animalObj} />
+            <div key={animalObj.id} className="column" >
+                <AnimalImg  {...animalObj} />
             </div>
-        )
-    })
-    // if (animals.length > 3) {
-    //     const startIndex = Math.floor(Math.random() * animals.length - 2);
-    //     const animalsToDisplay = animals.slice(startIndex, startIndex + 3).map((animalObj) => (
-    //         <div className="column" >
-    //             <AnimalImg  key={animalObj.id} {...animalObj} />
-    //         </div>
-    //     ))
-
+        )})
         return (
             <div className="ui three column grid" >
                 {animalsToDisplay}

@@ -14,7 +14,9 @@
         "The female’s in the pride often hunt alongside one another, working to take down giant prey."
       ],
       "likes": 1,
-      "comments": []
+      "comments": [
+        "I love the lion!!"
+      ]
     },
     {
       "id": "2",
@@ -46,7 +48,9 @@
         "The Clouded leopard can climb vertically down a tree trunk, face first."
       ],
       "likes": 1,
-      "comments": []
+      "comments": [
+        "The Mainland Clouded Leopard has such beautiful color patterns!"
+      ]
     },
     {
       "id": "4",
@@ -372,7 +376,7 @@
       "eventName": "Feeding Frenzy with the Flamingos!",
       "locationInZoo": "North America",
       "animalsInvolved": [
-        "Flamingo"
+        "flamingo"
       ],
       "eventDescription": "Bring the whole family to witness our Flamingoes gobble up their lunch! Cups of krill will be available for purchase if you are feeling a little WILD today!",
       "zooHandler": "Becky",
@@ -383,9 +387,9 @@
       "eventName": "The African Safari",
       "locationInZoo": "Africa",
       "animalsInvolved": [
-        "Giraffe",
-        "Zebra",
-        "Lion"
+        "giraffe",
+        "zebra",
+        "lion"
       ],
       "eventDescription": "Learn about some of our beautiful safari animals that we have on exhibit! One of our in-house conservationist will lead a discussion on the animals, their natural habitat, and how we can help their survival.",
       "zooHandler": "Larry",
@@ -396,7 +400,7 @@
       "eventName": "The Jungle Walk",
       "locationInZoo": "Asia",
       "animalsInvolved": [
-        "Orangutans"
+        "orangutans"
       ],
       "eventDescription": "This educational and upclose encounter will leave your primate heart full of cuddles and information. Join our education specialist to learn about the Orangutans and how their bodies support them as they traverse through the trees.",
       "zooHandler": "Joey",

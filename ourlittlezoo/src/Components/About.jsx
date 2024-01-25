@@ -7,17 +7,34 @@ function About(){
 
 
     return(
-    <div className="ui stackable grid">
+    <div className="ui stackable">
         
-        <div className="one column row">
-            <h1 className="ui header " >About</h1>
-            <SupportZooLink     />
+        <div className="ui one column grid">
+            <div className="column">
+                <h1 style={{paddingTop: 15}} className="ui huge header center aligned " >About</h1>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <SupportZooLink     />
+                </div>
+            </div>
         </div>
-        <Bio    />
-        <div className="two column row">
-            <Hours  />
-            <Faq    />
+
+        <div className="ui one column grid center aligned">
+            <Bio    />
         </div>
+
+        <div className="ui one column grid center aligned">
+            <div className="eight wide column">
+                <div className="ui container" style={{padding:10}}>
+                    <Hours  />
+                </div>
+            </div>
+            <div className="eight wide column">
+                <div className="ui container" style={{padding:10}}>
+                    <Faq    />
+                </div>
+            </div>
+        </div>
+    
     </div>
     )
 }

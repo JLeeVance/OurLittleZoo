@@ -9,14 +9,10 @@ function Comments({ comments , name }){
     const [ commComment , setCommComment ] = useState(comments)
     const commentsToRender = commComment.map((comment) => {
        return ( 
-        <div className="ui comments">
-            <div className="">
-                <div className="content">
-                    <p className="ui center align" key={comment}>{comment}</p>
-                </div>
-            </div>
+        <div className="ui circular segment">  
+            <p key={comment}>{comment}</p>
         </div>)
-})
+    })
 
     function handleCommentSubmit(e){
         e.preventDefault();
@@ -35,17 +31,19 @@ function Comments({ comments , name }){
 
     return(
         <div className={"ui rounded form" && "green"}>
-            <h2 className="ui dividing header">Community Comments</h2>
+            <h2 className="ui dividing huge header">Community Comments</h2>
             <form class="ui form" onSubmit={handleCommentSubmit} type="submit">
-                <div class="field">
-                    <label>What surprised <strong>you</strong> about the {name}</label>
+                <div class="field" style={{padding:15}}>
+                    <label className="ui sub header" style={{padding:10}}>What surprised you about the {name}?</label>
                     <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
-                    <button type="Submit">Submit</button>
+                    <div style={{padding:10}}>
+                        <button className="ui button" type="Submit" style={{backgroundColor: "#90A07B" , padding:10}}  >Submit</button>
+                    </div>
                 </div>
             </form>
-        <div className="">
-            {commentsToRender}
-        </div>
+            <div className="ui container center aligned">
+                {commentsToRender}
+            </div>
       </div>
 
     )

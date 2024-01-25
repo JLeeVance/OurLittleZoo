@@ -6,10 +6,12 @@
 }
 
 .contentContainer {
-  background-color: #756A5E;
+  background-color: #846b51;
+  justify-content: center;
+  align-items: center;
 }
 
-.green{
+.greenChoice{
   background-color: #90A07B;
 }
 
@@ -18,6 +20,21 @@ html, body {
   margin: 0;
 }
 
+.eventCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeEventCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lightFont {
+  font-family: "Nixie One";
+}
 /* .container {
   display: flex;
   justify-content: center;

@@ -10,8 +10,8 @@ function Animal({ animals }){
 
   
     return (
-        <div className="ui container grid">
-            <h1 style={{paddingTop: 30}} className="ui header center aligned">Animals on Exhibit!</h1>
+        <div className="ui container grid" >
+            <h1 style={{paddingTop: 30 , alignItems: "center"}} className="ui huge header">Animals on Exhibit!</h1>
             <div className="sixteen wide column" style={{paddingTop:2}}>
                 <SearchBar onSearchChange={setFormData} formData={formData}/>
             </div>

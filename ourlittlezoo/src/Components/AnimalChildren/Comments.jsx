@@ -9,8 +9,8 @@ function Comments({ comments , name }){
     const [ commComment , setCommComment ] = useState(comments)
     const commentsToRender = commComment.map((comment) => {
        return ( 
-        <div className="ui circular segment">  
-            <p key={comment}>{comment}</p>
+        <div key={comment} className="ui circular segment">  
+            <p >{comment}</p>
         </div>)
     })
 
@@ -32,8 +32,8 @@ function Comments({ comments , name }){
     return(
         <div className={"ui rounded form" && "green"}>
             <h2 className="ui dividing huge header">Community Comments</h2>
-            <form class="ui form" onSubmit={handleCommentSubmit} type="submit">
-                <div class="field" style={{padding:15}}>
+            <form className="ui form" onSubmit={handleCommentSubmit} type="submit">
+                <div className="field" style={{padding:15}}>
                     <label className="ui sub header" style={{padding:10}}>What surprised you about the {name}?</label>
                     <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
                     <div style={{padding:10}}>

@@ -4,8 +4,8 @@ import EventDetails from './EventDetails';
 function EventContainer({events}){
     const eventsToRender = events.map((eventObj) => {
         return(
-            <div>
-                <EventDetails key={eventObj.id} {...eventObj}/>
+            <div key={eventObj.id}>
+                <EventDetails  {...eventObj}/>
             </div>
         )});
 

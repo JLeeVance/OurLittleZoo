@@ -24,10 +24,10 @@ function EventDetails({
             setShowDetails(true);
         }
     }
-    const animalsInEvent=animalsInvolved.map((string) => <span>{string}   </span>)
+    const animalsInEvent=animalsInvolved.map((string) => <span key={string}>{string}   </span>)
 
     return (
-        <div className='ui card' onClick={handleClick}>
+        <div className='ui card'>
             <h3 className='ui header center aligned'>{eventName}</h3>
             <p><strong>Location:</strong> {locationInZoo}</p>
             <p><strong>Animals:</strong> {animalsInEvent}</p>
@@ -38,7 +38,7 @@ function EventDetails({
                     <p><strong>Handler:</strong> {zooHandler}</p>
                 </div>
             ) : null}
-            
+            <button onClick={handleClick}className='ui small button'>{showDetails ? "Show Less!" : "Show More!"}</button>
         </div>
     )
 }

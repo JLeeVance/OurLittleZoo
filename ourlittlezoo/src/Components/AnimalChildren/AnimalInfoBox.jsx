@@ -16,7 +16,7 @@ function AnimalInfoBox({
  }){
     // console.log(funFacts)
 
-    const factsToRender = funFacts.map((fact) => <li className="ui comments" key={id}>{fact}</li> )
+    const factsToRender = funFacts.map((fact) => <li className="ui comments" key={fact}>{fact}</li> )
 
     return(
         <div>
@@ -45,8 +45,8 @@ function AnimalInfoBox({
                     {factsToRender}
                 </div>
             </div>
-            <div className="ui segment center aligned">
-                <Comments  comments={comments}/>
+            <div className="ui container center aligned">
+                <Comments name={commonName} comments={comments}/>
             </div>
 
         </div>

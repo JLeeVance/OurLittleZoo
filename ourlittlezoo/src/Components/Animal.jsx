@@ -18,10 +18,7 @@ function Animal({ animals }){
             <div className="sixteen wide column">
                 <AnimalContainer animals={searchedAnimals}  /> 
             </div>
-
-                {/* <AnimalContainer animals={searchedAnimals}  />  */}
-
-            </div>  
+        </div>  
           
     )
 }

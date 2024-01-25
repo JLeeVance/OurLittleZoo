@@ -1,12 +1,16 @@
 
 .background {
-  background-color: #baae99 ;
+  background-color: #FFF8E7 ;
   max-height: 100%;
   margin: 0;
 }
 
 .contentContainer {
-  background-color: #FFFFF8;
+  background-color: #756A5E;
+}
+
+.green{
+  background-color: #90A07B;
 }
 
 html, body {
@@ -14,12 +18,12 @@ html, body {
   margin: 0;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* viewport height */
-}
+ 
 
 .page {
   width: 80%;

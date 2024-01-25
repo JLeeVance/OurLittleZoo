@@ -25,7 +25,7 @@ function AnimalCard({
               </div>
             </div>
           </div>
-        <img src={animalUrl}/>
+        <img className="ui image" style={{maxHeight:230}} src={animalUrl}/>
         </div>
         <h4 className="ui large header center aligned" >{commonName}</h4>
         <h4 className="ui sub header" >Exhibit: {exhibit} </h4>

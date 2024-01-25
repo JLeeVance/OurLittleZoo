@@ -1,4 +1,4 @@
-import { useState , useEffect, Suspense } from "react";
+import { useState , useEffect } from "react";
 import './App.css';
 
 
@@ -79,11 +79,7 @@ function App() {
           <Route path="/"         element={<Home events={showEvents} animals={animals}/>} />
           <Route path="/animals" element={<Animal  animals={animals}/>}  />
           <Route path="/animals/:id" element={<AnimalInfo  />}/>
-          <Route path="/events"    element={<Suspense fallback={<div>loading</div>}>
-                                                <Events events={showEvents}/>
-                                            </Suspense>}  />
-            
-            
+          <Route path="/events"    element={<Events events={showEvents}/>}/>
           <Route path="/about"     element={<About     />}   />
           <Route path="/map"       element={<Map       />}   />
         </Routes>

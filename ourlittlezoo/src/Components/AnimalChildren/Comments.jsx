@@ -2,12 +2,21 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 
-function Comments({ comments }){
+function Comments({ comments , name }){
     
     const { id } = useParams();
     const [ formData , setFormData ] = useState("");
     const [ commComment , setCommComment ] = useState(comments)
-    const commentsToRender = commComment.map((comment) => <li className="ui comment" key={comment} >{comment}</li>)
+    const commentsToRender = commComment.map((comment) => {
+       return ( 
+        <div className="ui comments">
+            <div className="">
+                <div className="content">
+                    <p className="ui center align" key={comment}>{comment}</p>
+                </div>
+            </div>
+        </div>)
+})
 
     function handleCommentSubmit(e){
         e.preventDefault();
@@ -25,16 +34,19 @@ function Comments({ comments }){
     }
 
     return(
-        <div className="ui form">
+        <div className={"ui rounded form" && "green"}>
             <h2 className="ui dividing header">Community Comments</h2>
-            <form onSubmit={handleCommentSubmit} type="submit">
-                <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
-                <button type="Submit">Submit</button>
+            <form class="ui form" onSubmit={handleCommentSubmit} type="submit">
+                <div class="field">
+                    <label>What surprised <strong>you</strong> about the {name}</label>
+                    <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
+                    <button type="Submit">Submit</button>
+                </div>
             </form>
-            <div className="ui comments">
+        <div className="">
             {commentsToRender}
-            </div>
         </div>
+      </div>
 
     )
 }

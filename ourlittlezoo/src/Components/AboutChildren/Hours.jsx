@@ -2,10 +2,10 @@
 function Hours(){
 
     return(
-        <div className="ui segment">
+        <div className="">
             <div className="ui card">
-                <h1 className="ui header">Hours of Operation:</h1>
-                <div>
+                <h1 style={{padding:10}} className="ui header center aligned">Hours of Operation:</h1>
+                <div style={{padding:10}}>
                     <h2 className="ui header">Monday - Friday:</h2>
                     <div>
                     <p>Zoo Gates Open: 9:00 AM</p>
@@ -13,7 +13,7 @@ function Hours(){
                     <p>Zoo Closes: 5:00 PM</p>
                     </div>
                 </div>
-                <div>
+                <div style={{padding:10}}>
                     <h2 className="ui header">Saturday - Sunday:</h2>
                     <div>
                         <p>Zoo Gates Open: 10:00 AM</p>
@@ -21,13 +21,13 @@ function Hours(){
                         <p>Zoo Closes: 5:30 PM</p>
                     </div>
                 </div>
-                <div>
+                <div style={{padding:10}}>
                     <h2 className="ui header">Special Events and Holidays:</h2>
-                    <ul>
-                        <p>Please check our Events Page for holiday hours, extended hours, and special events.</p>
-                    </ul>
+                    <span>Please check our Events Page for holiday hours, extended hours, and special events.</span> 
                 </div>
-                <p><em>Note: Zoo hours are subject to change. We recommend contacting us for the most up-to-date information</em></p>
+                <div style={{padding:10}}>
+                    <p><em>Note: Zoo hours are subject to change. We recommend contacting us for the most up-to-date information</em></p>
+                </div>
             </div>
         </div>
     )

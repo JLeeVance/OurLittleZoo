@@ -2,12 +2,17 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 
-function Comments({ comments }){
+function Comments({ comments , name }){
     
     const { id } = useParams();
     const [ formData , setFormData ] = useState("");
     const [ commComment , setCommComment ] = useState(comments)
-    const commentsToRender = commComment.map((comment) => <li className="ui comment" key={comment} >{comment}</li>)
+    const commentsToRender = commComment.map((comment) => {
+       return ( 
+        <div className="ui circular segment">  
+            <p key={comment}>{comment}</p>
+        </div>)
+    })
 
     function handleCommentSubmit(e){
         e.preventDefault();
@@ -25,16 +30,21 @@ function Comments({ comments }){
     }
 
     return(
-        <div className="ui form">
-            <h2 className="ui dividing header">Community Comments</h2>
-            <form onSubmit={handleCommentSubmit} type="submit">
-                <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
-                <button type="Submit">Submit</button>
+        <div className={"ui rounded form" && "green"}>
+            <h2 className="ui dividing huge header">Community Comments</h2>
+            <form class="ui form" onSubmit={handleCommentSubmit} type="submit">
+                <div class="field" style={{padding:15}}>
+                    <label className="ui sub header" style={{padding:10}}>What surprised you about the {name}?</label>
+                    <input onChange={ e => setFormData(e.target.value)} type="text" value={formData} />
+                    <div style={{padding:10}}>
+                        <button className="ui button" type="Submit" style={{backgroundColor: "#90A07B" , padding:10}}  >Submit</button>
+                    </div>
+                </div>
             </form>
-            <div className="ui comments">
-            {commentsToRender}
+            <div className="ui container center aligned">
+                {commentsToRender}
             </div>
-        </div>
+      </div>
 
     )
 }

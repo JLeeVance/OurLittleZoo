@@ -1,55 +1,54 @@
 
-.animalCard{
-  display:block;
-  border: #282c34;
-  border-style: double;
-  width: 500px;
-
-
+.background {
+  background-color: #FFF8E7 ;
+  max-height: 100%;
+  margin: 0;
 }
 
-.cardImg{
-  max-block-size: 275px;
-}
-
-.animalNav{
-  display: block;
-  flex-direction: column;
-}
-
-
-
-
-
-
-
-.App {
-  text-align: center;
-  align-content: center;
+.contentContainer {
+  background-color: #846b51;
   justify-content: center;
-  display: grid
-
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greenChoice{
+  background-color: #90A07B;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.eventCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeEventCard {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
+.lightFont {
+  font-family: "Nixie One";
+}
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* viewport height */
+ 
 
+.page {
+  width: 80%;
+  height: 80%;
+  border: 20px solid #ccc;
+  box-sizing: border-box;
+} 
+
+.nopadding {
+  padding: 0%;
+}

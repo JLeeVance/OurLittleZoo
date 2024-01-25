@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function SupportZooLink(){
 
     return(
-        <Link className="ui button" to="/">Support our Zoo</Link>
+        <Link style={{ backgroundColor: "#90A07B"}} className="ui button" to="/">Support our Zoo</Link>
     )
 }
 

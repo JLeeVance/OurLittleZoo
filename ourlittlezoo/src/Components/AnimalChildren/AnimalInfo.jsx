@@ -15,9 +15,8 @@ function AnimalInfo(){
     } , [] )
 
     return(
-        <div className=" ui container">
+        <div className="ui container">
             {Object.keys(singleAniObj).length > 0 && <AnimalInfoBox  {...singleAniObj}  /> }
-
         </div>
         
     )

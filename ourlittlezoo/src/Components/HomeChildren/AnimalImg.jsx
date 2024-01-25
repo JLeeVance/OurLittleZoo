@@ -20,7 +20,7 @@ function AnimalImg({
           <div className={`ui dimmer ${dimmerActive ? 'active' : ''}`}>
             <div className="content">
               <div className="center">
-                <Link to={`/animals/${id}`} class="ui inverted button">more on the {commonName}</Link>
+                <Link to={`/animals/${id}`} className="ui inverted button">more on the {commonName}</Link>
                 <Link to="/animals/" className='ui inverted button'>See our Animals</Link>
               </div>
             </div>

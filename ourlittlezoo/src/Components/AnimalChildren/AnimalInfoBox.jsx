@@ -54,9 +54,9 @@ function AnimalInfoBox({
                     </div>
                 </div>
             </div>
-            <div className="ui container center aligned" style={{padding:30}}>
+            <li className="ui container center aligned" style={{padding:30}}>
                 <Comments name={commonName} comments={comments}/>
-            </div>
+            </li>
 
         </div>
     )

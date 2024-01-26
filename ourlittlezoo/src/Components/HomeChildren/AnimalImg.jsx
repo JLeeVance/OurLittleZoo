@@ -27,7 +27,6 @@ function AnimalImg({
           </div>
         <img src={animalUrl} />
         </div>
-        
       </div>
     </div>
 

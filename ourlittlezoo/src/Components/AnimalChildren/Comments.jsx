@@ -41,11 +41,10 @@ function Comments({ comments , name }){
                     </div>
                 </div>
             </form>
-            <div className="ui container center aligned">
+            <div className="ui one column grid">
                 {commentsToRender}
             </div>
       </div>
-
     )
 }
 
